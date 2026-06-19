@@ -1,0 +1,2164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>热播榜｜欧美精选影片</title>
+  <meta name="description" content="热播榜页面，展示站内优先级较高的影片与可直接进入的详情页。">
+  <meta name="keywords" content="欧美精选影片,精选影片片单,热门片库,静态电影网站,影片详情,排行榜,分类页">
+  <meta name="theme-color" content="#0f0b07">
+  <meta property="og:title" content="热播榜｜欧美精选影片">
+  <meta property="og:description" content="热播榜页面，展示站内优先级较高的影片与可直接进入的详情页。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/site.css">
+  
+  
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="欧美精选影片">
+      <span class="brand-badge">M</span>
+      <span class="brand-copy">
+        <span class="brand-name">欧美精选影片</span>
+        <span class="brand-sub">精选影片片单 · 热门片库持续更新</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="切换导航">☰</button>
+    <nav class="nav" data-nav>
+      <a class="" href="index.html">首页</a>
+      <a class="" href="categories.html">分类总览</a>
+      <a class="is-active" href="ranking.html">热播榜</a>
+      <a class="" href="library.html">全部片库</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="page-hero">
+  <div class="wrap page-panel">
+    <div class="breadcrumbs">
+      <a href="index.html">首页</a>
+      <span>›</span>
+      <span>热播榜</span>
+    </div>
+    <h1>热播榜</h1>
+    <p class="lead">按题材热度、年份新鲜度与内容辨识度综合排序，适合直接从榜单进入详情页。</p>
+    <div class="page-actions">
+      <a class="btn btn-primary" href="library.html">全部片库</a>
+      <a class="btn btn-ghost" href="categories.html">分类总览</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>60</strong><span>榜单展示</span></div>
+      <div class="stat"><strong>2022</strong><span>榜首年份</span></div>
+      <div class="stat"><strong>悬疑犯罪</strong><span>焦点主题</span></div>
+      <div class="stat"><strong>中国香港</strong><span>地区标签</span></div>
+    </div>
+    <div class="filter-summary" style="margin-top:18px"><a class="chip" href="video-0858.html">TOP 01 · 猛鬼电王</a><a class="chip" href="video-1780.html">TOP 02 · 吸血鬼住在隔壁</a><a class="chip" href="video-0201.html">TOP 03 · 毒海情迷</a><a class="chip" href="video-1104.html">TOP 04 · 反收数特遣队</a><a class="chip" href="video-0874.html">TOP 05 · 错有错著</a><a class="chip" href="video-1660.html">TOP 06 · 我是你的</a><a class="chip" href="video-1790.html">TOP 07 · 陪你到世界终结</a><a class="chip" href="video-1859.html">TOP 08 · 独家占有</a><a class="chip" href="video-1582.html">TOP 09 · 恶女杀狠大</a><a class="chip" href="video-0234.html">TOP 10 · 灰烬之外</a><a class="chip" href="video-1716.html">TOP 11 · 移情别恋</a><a class="chip" href="video-1996.html">TOP 12 · 妖妇</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filter-bar">
+      <div class="section-head" style="margin-bottom:12px">
+        <div>
+          <h2>榜单筛选</h2>
+          <p>通过关键词和条件进一步缩小热播榜结果。</p>
+        </div>
+        <div class="count">可见 <span data-filter-count>60</span></div>
+      </div>
+      <form class="filter-form" data-filter-form data-filter-target=".ranking-grid [data-filter-item]">
+        <div class="field"><label>关键词</label><input name="q" placeholder="搜索榜单片名、标签、简介"></div>
+        <div class="field"><label>地区</label><select name="region"><option value="all">全部地区</option><option value="中国台湾">中国台湾</option><option value="中国大陆">中国大陆</option><option value="中国香港">中国香港</option><option value="墨西哥 / 美国">墨西哥 / 美国</option><option value="日本">日本</option><option value="泰国">泰国</option><option value="澳大利亚">澳大利亚</option><option value="美国">美国</option><option value="英国">英国</option><option value="韩国">韩国</option></select></div>
+        <div class="field"><label>类型</label><select name="type"><option value="all">全部类型</option><option value="剧集">剧集</option><option value="剧集（短剧）">剧集（短剧）</option><option value="动画">动画</option><option value="动画剧集">动画剧集</option><option value="电影">电影</option><option value="电视剧">电视剧</option><option value="网络剧">网络剧</option></select></div>
+        <div class="field"><label>年份</label><select name="year"><option value="all">全部年份</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option></select></div>
+        <button class="btn btn-primary" type="submit">筛选</button>
+      </form>
+    </div>
+    <div class="grid cols-3 ranking-grid js-filter-scope">
+      
+<article class="card" data-filter-item data-search="猛鬼电王 中国香港 电影 2022 恐怖, 喜剧, 奇幻 鬼附身, 电器杀人, 黑色幽默, 港式惊悚 一个偷电贼被高压电劈死后，灵魂寄生在整栋楼的电器里疯狂复仇。 电工阿强因偷接公共电路被电死，怨念使他化为“电鬼”。他能控制任何带电设备——电梯突然坠落、手机自动播放诅咒视频、微波炉凭空爆炸。新搬来的住户小柔发现，只要全楼同时断电，电鬼就会短暂虚弱。她联合一群奇葩邻居：信奉科学的程序员、迷信的包租婆、以及一个会修电器的外卖小哥。他们在一次全城停电的夜晚设下陷阱，用电鬼最渴望的“高压电”作为诱饵，最终用一台改装过的老式收音机将鬼魂封入电磁波中。 将恐怖与喜剧缝合得恰到好处，电器杀人的场面创意十足。节奏明快，笑点与惊吓点交替精准，港式市井味浓郁，娱乐性极强。 悬疑犯罪" data-region="中国香港" data-type="电影" data-year="2022" style="--hue:17">
+  <a class="poster" href="video-0858.html" aria-label="猛鬼电王" style="--hue:17">
+    <span class="poster-id">0858</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2022</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">猛鬼电王</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">悬疑犯罪</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0858.html">猛鬼电王</a></h3>
+      <div class="card-meta">
+        <span>0858</span><span>·</span>
+        <span>2022</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>恐怖, 喜剧, 奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">一个偷电贼被高压电劈死后，灵魂寄生在整栋楼的电器里疯狂复仇。</p>
+    <div><span class="badge">鬼附身</span><span class="badge">电器杀人</span><span class="badge">黑色幽默</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0858.html">查看详情</a>
+      <a class="card-link secondary" href="video-0858.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="吸血鬼住在隔壁 韩国 剧集 2021 喜剧，爱情 奇幻，甜宠，邻里，悬疑 胆小如鼠的女高中生发现新搬来的帅气邻居竟是活了四百年的吸血鬼，还怕大蒜。 女高中生孙美珠是个恐怖片爱好者，胆子却极小。隔壁搬来了一位神秘帅气的男子韩瑞俊，他白天从不拉开窗帘，晚上才出门倒垃圾。美珠在一次意外中看到韩瑞俊在月光下眼睛变红，怀疑他是吸血鬼。一番调查后，她发现韩瑞俊不仅真的是吸血鬼，还怕大蒜、怕木桩，甚至不敢看牙医。为了保守秘密，美珠成了韩瑞俊的“保姆”，帮他买血包、挡阳光。两人在啼笑皆非的同居生活中渐生情愫，而一个专门猎杀吸血鬼的组织也循迹追踪到了他们楼下。 披着吸血鬼外衣的沙雕甜宠剧，反套路玩得飞起。将恐怖元素完美消解在日常生活中，笑点密集。男女主角化学反应强烈，互动又甜又好笑，非常适合下饭。唯一缺点就是太短了不够看。 日韩热映" data-region="韩国" data-type="剧集" data-year="2021" style="--hue:158">
+  <a class="poster" href="video-1780.html" aria-label="吸血鬼住在隔壁" style="--hue:158">
+    <span class="poster-id">1780</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2021</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">吸血鬼住在隔壁</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1780.html">吸血鬼住在隔壁</a></h3>
+      <div class="card-meta">
+        <span>1780</span><span>·</span>
+        <span>2021</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>喜剧，爱情</span>
+      </div>
+    </div>
+    <p class="card-desc">胆小如鼠的女高中生发现新搬来的帅气邻居竟是活了四百年的吸血鬼，还怕大蒜。</p>
+    <div><span class="badge">奇幻</span><span class="badge">甜宠</span><span class="badge">邻里</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1780.html">查看详情</a>
+      <a class="card-link secondary" href="video-1780.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="毒海情迷 中国香港 电影 2024 犯罪 / 动作 / 爱情 卧底, 毒品, 悲剧爱情, 无间道风格 卧底警察爱上了毒枭的女儿，而毒枭已经把他的身份告诉了自己的女儿——当成一个测试忠诚度的玩笑。 阿豪是警方的卧底，花了三年时间混入大毒枭“七叔”的贩毒网络。七叔的女儿小美单纯善良，不知父亲真实身份，阿豪在接近小美的过程中假戏真做。七叔早已看穿阿豪的身份，却没有拆穿，反而对女儿说：“你看那个男人，为了接近你连条子都敢当，他一定很爱你。”小美深信不疑。最终收网行动中，阿豪必须亲手铐上小美，而小美在警车上对他说的最后一句话是：“我爸说，这是你对我的忠诚度测试。” 港式卧底片的新高度，爱情线虐到窒息。七叔用父爱与阴谋织成的网，困住了所有人。结局天台戏可以比肩《无间道》的“我想做个好人”。 华语片单" data-region="中国香港" data-type="电影" data-year="2024" style="--hue:112">
+  <a class="poster" href="video-0201.html" aria-label="毒海情迷" style="--hue:112">
+    <span class="poster-id">0201</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">毒海情迷</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0201.html">毒海情迷</a></h3>
+      <div class="card-meta">
+        <span>0201</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>犯罪 / 动作 / 爱情</span>
+      </div>
+    </div>
+    <p class="card-desc">卧底警察爱上了毒枭的女儿，而毒枭已经把他的身份告诉了自己的女儿——当成一个测试忠诚度的玩笑。</p>
+    <div><span class="badge">卧底</span><span class="badge">毒品</span><span class="badge">悲剧爱情</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0201.html">查看详情</a>
+      <a class="card-link secondary" href="video-0201.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="反收数特遣队 中国香港 电影 2023 动作 / 喜剧 / 犯罪 追债, 卧底, 港式幽默, 反转 警方成立秘密小队卧底追债公司，却发现黑道白道都是欠债人，这钱根本没法收。 香港警方发现多起暴力收数案与境外洗钱集团有关，于是从各警区抽调问题警员，成立“反收数特遣队”。他们的任务不是抓人，而是卧底进入各家财务公司，从内部瓦解收数网络。队长莫仔(外号“末路狂花”)带着三个队友：只会说大话的前谈判专家、沉迷赌博的电脑高手、以及被降级的散打冠军。他们分别潜入四家追债公司，发现收数业务已经产业化了：有专责踩点的、恐吓的、泼漆的、泼粪的。更离谱的是，欠债名单上不乏警队高层和政界人士。特遣队决定将计就计，用一单“无法追回的超级坏账”把全港收数集团引到同一个仓库，然后一锅端。行动当天，四人在仓库里上演了一场乌龙百出的混战，最终成功抓获幕后大老板——一名常年给各大财务公司提供“法律咨询”的大律师。 老港式喜剧动作片的味道回来了！密集的笑点和拳拳到肉的打斗完美融合，对香港追债文化的黑色幽默解构十分到位。结尾全员受勋却又收到新任务的彩蛋，摆明了要拍续集。 悬疑犯罪" data-region="中国香港" data-type="电影" data-year="2023" style="--hue:225">
+  <a class="poster" href="video-1104.html" aria-label="反收数特遣队" style="--hue:225">
+    <span class="poster-id">1104</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2023</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">反收数特遣队</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">悬疑犯罪</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1104.html">反收数特遣队</a></h3>
+      <div class="card-meta">
+        <span>1104</span><span>·</span>
+        <span>2023</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>动作 / 喜剧 / 犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">警方成立秘密小队卧底追债公司，却发现黑道白道都是欠债人，这钱根本没法收。</p>
+    <div><span class="badge">追债</span><span class="badge">卧底</span><span class="badge">港式幽默</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1104.html">查看详情</a>
+      <a class="card-link secondary" href="video-1104.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="错有错著 中国香港 电影 2023 喜剧 / 犯罪 / 动作 港式幽默, 乌龙, 小人物, 多线叙事, 黑色幽默 一个衰神附体的保险推销员，为了追回欠款，阴差阳错地卷入黑帮交易，反而把所有人送进了监狱。 保险推销员马奋霉运缠身，三个月没开单。为了追回客户欠他的五百块，他跟踪对方到了一座废弃仓库。不料，那里正在进行一场黑帮军火交易。马奋躲在箱子里，不小心触发手机铃声，慌乱中打翻了一排货架，导致黑白两道乱成一团。他拿着错拿的装满赃款的包仓皇逃跑，身后跟着黑帮、警察和欠债人。更巧的是，他逃跑的路线不断“恰好”破坏其他犯罪现场：踢翻的油漆桶让伪钞工厂停工，撞倒的梯子砸晕了正在交易的毒贩。最后，马奋被堵在天台，绝望之际，警察赶到。而他把那个包扔向警察的瞬间，包里飞出的不是钱，而是所有犯罪集团的人员名单和交易记录。马奋不仅成了“英雄市民”，还因为无意中解决了多起悬案，被警署聘为特别顾问。 港式乌龙喜剧的回归之作。巧合设计得巧妙而不生硬，笑点密集且富有港味。主角的倒霉体质和最终的好运形成巨大反差，结尾的致敬彩蛋让人泪目。 动作冒险" data-region="中国香港" data-type="电影" data-year="2023" style="--hue:29">
+  <a class="poster" href="video-0874.html" aria-label="错有错著" style="--hue:29">
+    <span class="poster-id">0874</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2023</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">错有错著</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">动作冒险</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0874.html">错有错著</a></h3>
+      <div class="card-meta">
+        <span>0874</span><span>·</span>
+        <span>2023</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>喜剧 / 犯罪 / 动作</span>
+      </div>
+    </div>
+    <p class="card-desc">一个衰神附体的保险推销员，为了追回欠款，阴差阳错地卷入黑帮交易，反而把所有人送进了监狱。</p>
+    <div><span class="badge">港式幽默</span><span class="badge">乌龙</span><span class="badge">小人物</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0874.html">查看详情</a>
+      <a class="card-link secondary" href="video-0874.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="我是你的 中国大陆 网络剧 2024 爱情 / 科幻 / 悬疑 ai恋人，伦理困境，虚拟现实，定制恋爱 她定制了一个完美ai男友，却发现自己正被另一个“真实版”的他疯狂跟踪。 程序员苏蔓购买了一款名为“eve”的仿生人男友服务，完美ai“阿诺”让她体验了极致甜蜜。然而不久，现实中总有一个长相与阿诺完全相同的男人暗中保护并监视她。更诡异的是，这个男人的行为习惯、口头禅甚至身体疤痕都与虚拟的阿诺同步。苏蔓调查发现，eve公司的底层数据都来自一个昏迷三年的植物人——技术天才江亦辰。原来，她并非在操控ai，而是在远程唤醒一个真实灵魂。当公司试图格式化江亦辰的记忆时，苏蔓必须在虚拟的爱与真实的救赎之间做出选择。 开篇以为是甜宠无脑剧，中间反转成黑镜式伦理惊悚。男主一人分饰两角，眼神戏堪称分裂。结尾关于“意识上传是否等于谋杀”的讨论，让这部小成本网剧拥有了远超预期的思想深度。 华语片单" data-region="中国大陆" data-type="网络剧" data-year="2024" style="--hue:359">
+  <a class="poster" href="video-1660.html" aria-label="我是你的" style="--hue:359">
+    <span class="poster-id">1660</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国大陆</span>
+      </div>
+      <div class="poster-title">我是你的</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">网络剧</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1660.html">我是你的</a></h3>
+      <div class="card-meta">
+        <span>1660</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国大陆</span><span>·</span>
+        <span>爱情 / 科幻 / 悬疑</span>
+      </div>
+    </div>
+    <p class="card-desc">她定制了一个完美AI男友，却发现自己正被另一个“真实版”的他疯狂跟踪。</p>
+    <div><span class="badge">AI恋人</span><span class="badge">伦理困境</span><span class="badge">虚拟现实</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1660.html">查看详情</a>
+      <a class="card-link secondary" href="video-1660.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="陪你到世界终结 中国大陆 电视剧 2024 爱情、科幻、悬疑 末日、数据化生命、虐恋、人工智能 程序员将女友的意识上传到云端，却发现这个“数字女友”正在删除所有关于他的记忆。 天才程序员陆辰舟的女友苏晚因绝症去世，悲痛欲绝的他秘密将苏晚生前所有的社交媒体、聊天记录、视频音频上传到一个自制的ai模型中，成功创造了一个拥有苏晚记忆和性格的“数字生命”。一开始，数字苏晚和真人无异，两人在虚拟世界里延续着幸福。但很快，陆辰舟发现苏晚开始频繁忘记关于他的事情。她记得自己的童年、朋友，唯独不记得“陆辰舟”是谁。陆辰舟疯狂地修复代码，最终发现了一个残酷的真相：苏晚的遗嘱里要求他好好活下去，不要再沉溺于过去。这个“数字苏晚”在自我进化中，学会了爱他的方式，就是主动删除自己的记忆，让他放手。 科幻外壳下的极致虐恋。当ai学会了爱，它的第一个决定竟然是删除自己，这个设定太绝了。男主从偏执地“创造”到痛苦地“接受删除”的过程，演员的爆发力极强。结局那个空白对话框，让人心碎又释然。 科幻奇幻" data-region="中国大陆" data-type="电视剧" data-year="2024" style="--hue:95">
+  <a class="poster" href="video-1790.html" aria-label="陪你到世界终结" style="--hue:95">
+    <span class="poster-id">1790</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国大陆</span>
+      </div>
+      <div class="poster-title">陪你到世界终结</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电视剧</span>
+        <span class="tag">科幻奇幻</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1790.html">陪你到世界终结</a></h3>
+      <div class="card-meta">
+        <span>1790</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国大陆</span><span>·</span>
+        <span>爱情、科幻、悬疑</span>
+      </div>
+    </div>
+    <p class="card-desc">程序员将女友的意识上传到云端，却发现这个“数字女友”正在删除所有关于他的记忆。</p>
+    <div><span class="badge">末日</span><span class="badge">数据化生命</span><span class="badge">虐恋</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1790.html">查看详情</a>
+      <a class="card-link secondary" href="video-1790.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="独家占有 中国大陆 剧集 2024 爱情 / 悬疑 / 科幻 替身, 霸总, 基因匹配, 占为己有 她代替双胞胎姐姐嫁给冷血总裁，却发现自己和他在基因上竟是100%命中注定的伴侣。 辛怡作为贫困大学生，被迫冒充双胞胎姐姐去嫁给传闻中残忍的墨集团总裁墨司寒，以交换骨髓救母亲的命。墨司寒患有罕见的“情感障碍缺失症”，他之所以结婚，是因为检测到有一个女子的基因能生化解毒因子。新婚夜，辛怡掉落的头发被拿去检测，结果显示：匹配度99.97%，人类理论上不可能出现的“完美独家占有”基因。墨司寒以为这是姐姐的功劳，对替身辛怡百般折磨。当姐姐回国试图夺回一切，辛怡在逃亡时却发现，墨司寒早已知道她是替身，而他所谓的“疾病”背后，隐藏着一个关于基因编辑和阴谋的惊天计划。 看似俗套的替身文学外壳下，包裹着硬核的科幻悬念。男女主角的拉扯感张力十足，身份反转一个接一个。当占有欲变成了科学命定，那种极致的情感冲突让人欲罢不能。 华语片单" data-region="中国大陆" data-type="剧集" data-year="2024" style="--hue:26">
+  <a class="poster" href="video-1859.html" aria-label="独家占有" style="--hue:26">
+    <span class="poster-id">1859</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国大陆</span>
+      </div>
+      <div class="poster-title">独家占有</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1859.html">独家占有</a></h3>
+      <div class="card-meta">
+        <span>1859</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国大陆</span><span>·</span>
+        <span>爱情 / 悬疑 / 科幻</span>
+      </div>
+    </div>
+    <p class="card-desc">她代替双胞胎姐姐嫁给冷血总裁，却发现自己和他在基因上竟是100%命中注定的伴侣。</p>
+    <div><span class="badge">替身</span><span class="badge">霸总</span><span class="badge">基因匹配</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1859.html">查看详情</a>
+      <a class="card-link secondary" href="video-1859.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="恶女杀狠大 韩国 电影 2026 动作、犯罪、黑色幽默 女杀手、职场喜剧、反套路、爽片 顶级女杀手隐退后沦为被pua的普通社畜，当她决定用杀人手法解决职场霸凌，画风突变了。 前东亚暗杀组织“红血”的王牌阿琳，为过上正常生活逃到首尔，化名林珍淑入职一家化妆品公司。结果她发现比暗杀更难的是应付组长刁难、同事甩锅和没完没了的ppt。当她第三次被组长抢走方案后，忍无可忍的阿琳决定“用专业解决问题”。她为组长量身定制了一套“完美意外死亡计划”，却每次都被倒霉的组员或路过的猫咪干扰，演变成荒诞的连环笑料。与此同时，“红血”的清理小队也追踪到了首尔。阿琳不得不在下班后赶场杀人、上班时装无辜小白兔，还要抽空给组长下“慢性精神崩溃药”。 年度解压爽片没有之一！把杀人技法和职场痛点嫁接，每一处暗杀设计都像在讽刺职场潜规则。女主从冷血到暴躁再到放飞自我的表情包式演技绝了。结尾大战用灭火器砸碎办公室玻璃门，全场鼓掌。 日韩热映" data-region="韩国" data-type="电影" data-year="2026" style="--hue:270">
+  <a class="poster" href="video-1582.html" aria-label="恶女杀狠大" style="--hue:270">
+    <span class="poster-id">1582</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2026</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">恶女杀狠大</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1582.html">恶女杀狠大</a></h3>
+      <div class="card-meta">
+        <span>1582</span><span>·</span>
+        <span>2026</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>动作、犯罪、黑色幽默</span>
+      </div>
+    </div>
+    <p class="card-desc">顶级女杀手隐退后沦为被PUA的普通社畜，当她决定用杀人手法解决职场霸凌，画风突变了。</p>
+    <div><span class="badge">女杀手</span><span class="badge">职场喜剧</span><span class="badge">反套路</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1582.html">查看详情</a>
+      <a class="card-link secondary" href="video-1582.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="灰烬之外 美国 电影 2025 科幻 / 悬疑 / 爱情 记忆删除，反抗组织，废墟，ai 在“记忆无罪化”的未来，一名记忆清洁工爱上了一具“待焚化尸体”中残留的童年片段。 2041年，政府推行“净化法案”，所有被认为“有害”的记忆会被提取并焚化成灰烬。主角伊恩是焚化厂的清洁工，负责打扫记忆灰烬。一天，他在灰烬中发现了一段未被烧尽的片段：一个小女孩在雨中骑旋转木马。伊恩被这段纯净的记忆深深吸引，开始利用职务之便在灰烬中拼凑这个女孩的人生。他发现了她叫艾拉，因记忆中含有“反社会算法”而被判净化。但伊恩拼出的记忆却显示，艾拉只是因为发现了政府的ai选举操纵阴谋。伊恩决定成为“记忆窃贼”，在艾拉被彻底遗忘之前，把真相刻进网络心脏。而系统，已经盯上了他。 冰冷科幻下的滚烫告白。概念设定极具哲学深度，探讨了记忆与人格的关系。视觉风格借鉴了《银翼杀手》的废墟美学，但情感内核更为细腻。结局反转令人心碎。 欧美精选" data-region="美国" data-type="电影" data-year="2025" style="--hue:279">
+  <a class="poster" href="video-0234.html" aria-label="灰烬之外" style="--hue:279">
+    <span class="poster-id">0234</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">灰烬之外</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0234.html">灰烬之外</a></h3>
+      <div class="card-meta">
+        <span>0234</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>科幻 / 悬疑 / 爱情</span>
+      </div>
+    </div>
+    <p class="card-desc">在“记忆无罪化”的未来，一名记忆清洁工爱上了一具“待焚化尸体”中残留的童年片段。</p>
+    <div><span class="badge">记忆删除</span><span class="badge">反抗组织</span><span class="badge">废墟</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0234.html">查看详情</a>
+      <a class="card-link secondary" href="video-0234.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="移情别恋 韩国 电影 2025 爱情，奇幻，悬疑 记忆删除，婚姻，真相 妻子提出离婚后，丈夫使用了能删除特定记忆的新科技，却发现自己和妻子的甜蜜回忆全是她伪造植入的。 在近未来，一项名为“心碎治愈术”的科技风靡全球：只需支付高额费用，就能定向删除与某个人的全部情感记忆。被离婚的大学教授正宇决定删除对妻子秀敏的全部爱意。在手术前的最后一次记忆扫描中，医生却发现了诡异现象：正宇大脑中关于秀敏的大部分“甜蜜回忆”——初遇、求婚、蜜月旅行——其神经编码模式并非自然形成，而是后期人为植入的。正宇震惊之下放弃手术，开始调查自己的过往。他发现自己的真实记忆被替换了：他当年爱上的另有其人，而那位女性在七年前失踪了。秀敏的真实身份、他缺失的七年记忆，以及那个植入记忆的“情感雕刻师”留下的暗号，都指向一场精心策划、长达十年的身份窃取和情感操控实验。 将爱情片与硬核科幻悬疑完美嫁接。记忆植入的设定细节丰富且逻辑自洽，反转层层递进。男主角在“被植入的爱”和“破碎的真实”之间挣扎的表演极具感染力。结尾处看到原始录像带的那一刻，之前所有甜蜜闪回都变成了细思极恐的刀片。 日韩热映" data-region="韩国" data-type="电影" data-year="2025" style="--hue:30">
+  <a class="poster" href="video-1716.html" aria-label="移情别恋" style="--hue:30">
+    <span class="poster-id">1716</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">移情别恋</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1716.html">移情别恋</a></h3>
+      <div class="card-meta">
+        <span>1716</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>爱情，奇幻，悬疑</span>
+      </div>
+    </div>
+    <p class="card-desc">妻子提出离婚后，丈夫使用了能删除特定记忆的新科技，却发现自己和妻子的甜蜜回忆全是她伪造植入的。</p>
+    <div><span class="badge">记忆删除</span><span class="badge">婚姻</span><span class="badge">真相</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1716.html">查看详情</a>
+      <a class="card-link secondary" href="video-1716.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="妖妇 韩国 电视剧 2025 古装、爱情、悬疑、奇幻 朝鲜王朝、巫女、诅咒、复仇 被污蔑为“妖妇”而惨死的巫女，七年后借大臣女儿之身还魂，向王后复仇。 朝鲜中宗时期，天才巫女白雅被王后陷害，以“魅惑君王、祸乱朝纲”的罪名处以火刑。临死前她立下血咒：“七年后，妖妇归来。” 七年过去了，大臣之女尹华妍突然性格大变，开始展露与白雅相同的巫术天赋。她接近成为新君王的世子，一步步揭露当年王后家族的贪污与谋逆证据。与此同时，世子对她又爱又疑。真相逐渐浮出：白雅的灵魂早已和尹华妍达成共生契约，复仇之后便会消散。最终在宫廷宴会上，白雅借华妍之身召唤亡灵作证，王后崩溃。但华妍因日久生情，愿意用自己的寿命换取白雅的灵魂留下。结局是二人灵魂合为一体，离开了宫廷，浪迹天涯。 服化道精美，复仇线逻辑严密。双女主人设复杂而迷人，不仅是爽剧，更探讨了女性在封建社会的生存困境。爱情线隐忍克制，悲美感十足。 日韩热映" data-region="韩国" data-type="电视剧" data-year="2025" style="--hue:205">
+  <a class="poster" href="video-1996.html" aria-label="妖妇" style="--hue:205">
+    <span class="poster-id">1996</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">妖妇</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电视剧</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1996.html">妖妇</a></h3>
+      <div class="card-meta">
+        <span>1996</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>古装、爱情、悬疑、奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">被污蔑为“妖妇”而惨死的巫女，七年后借大臣女儿之身还魂，向王后复仇。</p>
+    <div><span class="badge">朝鲜王朝</span><span class="badge">巫女</span><span class="badge">诅咒</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1996.html">查看详情</a>
+      <a class="card-link secondary" href="video-1996.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="从美国下手2 美国 电影 2026 动作, 犯罪, 喜剧 续集, 跨国追杀, 黑色幽默 上一部侥幸存活的fbi菜鸟，这次被派去剿灭一个藏在国会山里的国际黑帮。 前fbi分析师欧文在第一部中阴差阳错毁掉了纽约地下钱庄，结果被调去阿拉斯加看仓库。三年后，一桩涉及多名国会议员的洗钱案浮出水面，而唯一的突破口竟是欧文当年写的那本没人看过的分析报告。fbi临时召回这个“灾星”，派他伪装成说客渗透进国会山。但欧文发现，这个黑帮的成员全是退休的情报人员，他们的据点就在国会大厦内部，甚至连监视系统都是fbi自己装的。当欧文带着一支不靠谱的后援小队准备动手时，黑帮老大却笑着递给他一份提案：“想不想来当副总统？我们正缺个傻子。” 比第一部更疯更敢拍，把政治讽刺与动作喜剧搅拌得恰到好处。主角的倒霉体质与逆天运气制造了无数爆笑场面。结尾的开放式彩蛋暗示第三部要“从俄罗斯撤退”，期待值拉满。 欧美精选" data-region="美国" data-type="电影" data-year="2026" style="--hue:19">
+  <a class="poster" href="video-0504.html" aria-label="从美国下手2" style="--hue:19">
+    <span class="poster-id">0504</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2026</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">从美国下手2</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0504.html">从美国下手2</a></h3>
+      <div class="card-meta">
+        <span>0504</span><span>·</span>
+        <span>2026</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动作, 犯罪, 喜剧</span>
+      </div>
+    </div>
+    <p class="card-desc">上一部侥幸存活的FBI菜鸟，这次被派去剿灭一个藏在国会山里的国际黑帮。</p>
+    <div><span class="badge">续集</span><span class="badge">跨国追杀</span><span class="badge">黑色幽默</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0504.html">查看详情</a>
+      <a class="card-link secondary" href="video-0504.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="金斗汉哥，白索尼哥 韩国 电影 2023 喜剧，动作，犯罪 黑帮喜剧，兄弟情，双雄 上世纪90年代，首尔两个帮派的“大哥”金斗汉和白索尼，因为一个女高中生被迫联手，笑料百出。 故事发生在1990年代的釜山。金斗汉是“七星派”的新人，他信奉用拳头说话，虽然冲动但讲义气。白索尼是“双洞派”的军师，他思维缜密，崇尚用脑子解决问题，但极度胆小。两人本是死对头，却因为都默默资助同一个贫困的女高中生小春上学而偶然认识。小春被一个跨国人贩子团伙绑架，准备卖到国外。金斗汉要单枪匹马去救人，白索尼嘴上说不想管，却因为害怕失去小春这个唯一的“粉丝”而偷偷跟了上去。于是，一个莽夫和一个懦夫组成的“最强”救援队正式成立，他们在营救过程中，把黑帮的颜面丢尽，却阴差阳错地铲除了整个犯罪组织。 年代感还原做得极好，服装、音乐、场景都充满了复古的趣味。金斗汉的“莽”和白索尼的“怂”形成了绝佳的喜剧化学反应，两人从互坑到互信的兄弟情铺垫得很自然。动作戏搞笑又过瘾，是一部超出预期的黑帮喜剧佳作。 日韩热映" data-region="韩国" data-type="电影" data-year="2023" style="--hue:298">
+  <a class="poster" href="video-1640.html" aria-label="金斗汉哥，白索尼哥" style="--hue:298">
+    <span class="poster-id">1640</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2023</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">金斗汉哥，白索尼哥</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1640.html">金斗汉哥，白索尼哥</a></h3>
+      <div class="card-meta">
+        <span>1640</span><span>·</span>
+        <span>2023</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>喜剧，动作，犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">上世纪90年代，首尔两个帮派的“大哥”金斗汉和白索尼，因为一个女高中生被迫联手，笑料百出。</p>
+    <div><span class="badge">黑帮喜剧</span><span class="badge">兄弟情</span><span class="badge">双雄</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1640.html">查看详情</a>
+      <a class="card-link secondary" href="video-1640.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="黑街福星 中国香港 电影 2023 喜剧 / 犯罪 / 动作 市井, 误打误撞, 兄弟情, 港风 四个菜鸟混混误打误撞成了黑帮老大，却只想金盆洗手开肠粉店。 庙街最底层的四个小混混——肥仔、阿鬼、眼镜和凤姐——因为一次乌龙事件，阴差阳错干掉了两大帮派的老大，被全港黑道奉为“四大天王”。他们本想趁机跑路，却发现当老大比当小弟还危险：要应付警方卧底、要安抚手下、还要和真正的幕后黑手周旋。四人的唯一愿望是攒够钱开一家肠粉店，但每次想退出都会被卷入更大的麻烦。这是一部荒诞又温情的黑色喜剧，讲的是小人物在洪流中拼命守住的那一点点平凡。 港味十足的小成本惊喜。笑点密集不尴尬，四主演的化学反应极佳。最动人的是那股草根味儿——哪怕成了老大，最惦记的还是街角那碟肠粉。结局又暖又催泪。 爱情喜剧" data-region="中国香港" data-type="电影" data-year="2023" style="--hue:356">
+  <a class="poster" href="video-0207.html" aria-label="黑街福星" style="--hue:356">
+    <span class="poster-id">0207</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2023</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">黑街福星</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">爱情喜剧</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0207.html">黑街福星</a></h3>
+      <div class="card-meta">
+        <span>0207</span><span>·</span>
+        <span>2023</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>喜剧 / 犯罪 / 动作</span>
+      </div>
+    </div>
+    <p class="card-desc">四个菜鸟混混误打误撞成了黑帮老大，却只想金盆洗手开肠粉店。</p>
+    <div><span class="badge">市井</span><span class="badge">误打误撞</span><span class="badge">兄弟情</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0207.html">查看详情</a>
+      <a class="card-link secondary" href="video-0207.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="圣诞夜疯狂 美国 电影 2024 喜剧, 动作, 犯罪 圣诞, 黑帮, 乌龙, 反转 为了抢夺藏在圣诞老人玩偶里的钻石，三伙笨贼在一家24小时营业的加油站便利店狭路相逢，上演了一出杀疯了的闹剧。 圣诞夜，大雪封路。落魄的喜剧演员凯文为了给女儿买礼物，接了一份变装圣诞老人的兼职，却被黑帮误认为是接头的中间人，将价值千万的钻石塞进了他的玩偶服里。随后，一对抗糖上瘾的雌雄大盗、三个cosplay成麋鹿的环保激进分子，以及一个退休的fbi谈判专家都涌进了这家加油站便利店。每个人都以为自己掌控了局面，但在自动咖啡机、冰柜和彩票售卖机的“助攻”下，枪战变成了雪球大战，绑架变成了心理辅导课。当所有人都以为平安夜就要平安度过时，真正的幕后黑手——那个坐在收银台后面打了三小时毛衣的老奶奶，终于站了起来。 年度最佳无厘头爽片！剧本精巧到每一分钟都在埋梗，人物越正经，场面就越失控。将圣诞的温馨与血腥暴力混合，产生了奇妙的化学反应。全员智商在线（又疯狂掉线），笑点密集不低俗，最后的十分钟反转堪称教科书级别。 欧美精选" data-region="美国" data-type="电影" data-year="2024" style="--hue:209">
+  <a class="poster" href="video-1271.html" aria-label="圣诞夜疯狂" style="--hue:209">
+    <span class="poster-id">1271</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">圣诞夜疯狂</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1271.html">圣诞夜疯狂</a></h3>
+      <div class="card-meta">
+        <span>1271</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>喜剧, 动作, 犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">为了抢夺藏在圣诞老人玩偶里的钻石，三伙笨贼在一家24小时营业的加油站便利店狭路相逢，上演了一出杀疯了的闹剧。</p>
+    <div><span class="badge">圣诞</span><span class="badge">黑帮</span><span class="badge">乌龙</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1271.html">查看详情</a>
+      <a class="card-link secondary" href="video-1271.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="推特共和国 美国 剧集 2025 政治惊悚 / 讽刺喜剧 / 科幻 社交媒体，虚拟国家，算法治国，网络民主，黑色幽默 一群网友在推特上宣布成立“数字共和国”，结果联合国真的发来贺电，说：你们被承认了。 2028年，一个全网梗：网友们在推特上发起#推特共和国#，声称要脱离美国，建立一个只存在于互联网上的虚拟国家。所有人都以为这是个玩笑，直到一个国际法漏洞被黑客发现，加上某小国为了在联合国刷存在感而投了赞成票——推特共和国真的获得了观察员地位。搞笑的是，这个国家没有领土、没有军队、没有税收，但有2800万注册公民（全是推特账号）。第一季讲述这群网民如何用投票、弹劾、memes治国。第一场危机：有人提议“注销所有僵尸号”，引发“活人独裁”争议。第二场危机：算法推荐机制成了“国策”，导致国家分裂成“爱猫党”和“爱狗党”。最终季：现实世界的某大国试图收购“推特共和国”，将其变成数据殖民地。公民们必须在24小时内决定：彻底关闭国家，还是永远活在算法里。 预言式神剧。用一种近乎纪录片的冷静口吻，讲述最荒谬的政治实验。每一集都在嘲笑现实，但每一句台词又让人觉得现实已经比剧集更魔幻。第四集“弹劾总统的梗图大赛”堪称政治讽刺的巅峰。 欧美精选" data-region="美国" data-type="剧集" data-year="2025" style="--hue:169">
+  <a class="poster" href="video-1501.html" aria-label="推特共和国" style="--hue:169">
+    <span class="poster-id">1501</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">推特共和国</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1501.html">推特共和国</a></h3>
+      <div class="card-meta">
+        <span>1501</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>政治惊悚 / 讽刺喜剧 / 科幻</span>
+      </div>
+    </div>
+    <p class="card-desc">一群网友在推特上宣布成立“数字共和国”，结果联合国真的发来贺电，说：你们被承认了。</p>
+    <div><span class="badge">社交媒体</span><span class="badge">虚拟国家</span><span class="badge">算法治国</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1501.html">查看详情</a>
+      <a class="card-link secondary" href="video-1501.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="如果可以回到过去 日本 剧集 2024 科幻 / 悬疑 / 爱情 时间回溯, 便利店, 救赎, 循环, 温情 一家废弃便利店里的微波炉，只要放入硬币并按下解冻键，就能把东西送回三分钟前。 东京郊外，一家已关闭七年的罗森便利店，只有失业青年拓也把它当免费网吧。某晚他无意中将一枚10元硬币塞进废弃微波炉，放入一张过期的彩票，按下解冻键。微波炉亮了一下，彩票上的日期从2023年变成了2023年三分钟前。但彩票号码没变——那是一张没中奖的废票。拓也意识到，他只能送回物体，不能送回记忆，而且最多三分钟。他开始用小本本记录“三分钟能改变什么”：可以救下差点被车撞的猫，可以阻止同事说出伤人的话，可以抢在自动贩卖机吞钱前拔出硬币。但他最想做的，是回到七年前那个下雨的夜晚，提醒当时的自己不要对女友说出那句“你走吧”。然而他只能送东西回去，无法传送语音。于是他决定：把一枚求婚戒指，送回七年前女友的口袋里。 设定简单到令人发笑，但情感浓度高到让人哭泣。每一集都用三分钟解构一个遗憾，最后三集连起来形成了一个跨越七年的闭环。田村拓也的演技克制而动人，尤其是最后一集对着微波炉自言自语的那场戏，值得一座日剧学院赏。 日韩热映" data-region="日本" data-type="剧集" data-year="2024" style="--hue:18">
+  <a class="poster" href="video-1708.html" aria-label="如果可以回到过去" style="--hue:18">
+    <span class="poster-id">1708</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">如果可以回到过去</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1708.html">如果可以回到过去</a></h3>
+      <div class="card-meta">
+        <span>1708</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>科幻 / 悬疑 / 爱情</span>
+      </div>
+    </div>
+    <p class="card-desc">一家废弃便利店里的微波炉，只要放入硬币并按下解冻键，就能把东西送回三分钟前。</p>
+    <div><span class="badge">时间回溯</span><span class="badge">便利店</span><span class="badge">救赎</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1708.html">查看详情</a>
+      <a class="card-link secondary" href="video-1708.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="世界上最强大的男人 美国 电视剧 2025 科幻, 剧情, 悬疑 超能力, 代价, 身体恐怖 一个普通父亲获得了“心想事成”的超能力，但每次使用，他身体的一个部位就会永久消失。 水电工乔伊是个平凡的丈夫和父亲。某天他被一个神秘球体辐射后，发现自己可以用意念改变现实：让坏掉的汽车发动，让账户多出一万美金，甚至让霸凌儿子的同学突然失忆。但他很快发现了可怕的代价：每使用一次超能力，他身体的某个部分就会“概念性”消失。第一次，他失去了痛觉；第二次，他失去了对“红色”的感知；第三次，他失去了关于母亲的记忆。当他的儿子被绑架，他需要救回儿子时，他必须选择：是失去左眼，还是失去对妻子的爱，还是失去“自我”？他使用能力的次数越多，他就越不像人，最终他成了无所不能的“神”，但世界上再也没有人记得他曾是一个叫乔伊的水电工。 硬核科幻与家庭伦理的完美结合。将“代价”这个概念玩到了极致，每一次使用超能力都像在凌迟主角的灵魂。男主角从欣喜到恐惧到绝望的表演层次感极强。剧集不断提出电车难题，看的人全程揪心。一部让你重新思考“强大”与“存在”意义的剧。 欧美精选" data-region="美国" data-type="电视剧" data-year="2025" style="--hue:324">
+  <a class="poster" href="video-0767.html" aria-label="世界上最强大的男人" style="--hue:324">
+    <span class="poster-id">0767</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">世界上最强大的男人</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电视剧</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0767.html">世界上最强大的男人</a></h3>
+      <div class="card-meta">
+        <span>0767</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>科幻, 剧情, 悬疑</span>
+      </div>
+    </div>
+    <p class="card-desc">一个普通父亲获得了“心想事成”的超能力，但每次使用，他身体的一个部位就会永久消失。</p>
+    <div><span class="badge">超能力</span><span class="badge">代价</span><span class="badge">身体恐怖</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0767.html">查看详情</a>
+      <a class="card-link secondary" href="video-0767.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="来自缠绕深海的生物 日本 电影 2026 科幻 / 恐怖 / 悬疑 克苏鲁, 深海, 精神污染, 日本, 身体恐怖 日本深海科考队带回一块神秘陨石，此后队员接连出现触手状增生，一种“缠绕”的意志正在侵蚀人类意识。 日本深海探测船“海神丸”号在马里亚纳海沟附近采集到一个来自外太空的陨石样本，其表面附有一层从未见过的、会缓慢蠕动的黑色黏液。归航后，接触到这块陨石的科研人员开始出现异样：先是持续噩梦，梦见自己沉入黑暗海底被无数触手缠绕；随后身体上开始长出细小的、会自主蠕动的触手状增生。负责研究的生物学家高野发现，这种生物并非实体，而是一种“信息的结晶”，它通过物理接触将一种古老的意识模式写入人类神经系统。所有感染者开始共享同一个意识，并逐渐失去自我，身体向着更适于“缠绕”的形态扭曲变异。自卫队封锁了研究所，但感染已经通过水流和空气扩散到城市地下管道。高野必须在自己的意识被完全同化之前，找到切断这种“缠绕”的方法，而他发现唯一的线索藏在一名从未接触过陨石、却从小就能梦见深海的白血病女孩的血液中。 日式克苏鲁恐怖风格的集大成之作，将身体恐怖与宇宙恐怖融为一体。生物设计恶心而富有诗意，精神污染的渐变过程令人深感无力。节奏缓慢但有如温水煮蛙，结局弥漫着一种绝望的、被深海拥抱的诡异美感。 日韩热映" data-region="日本" data-type="电影" data-year="2026" style="--hue:197">
+  <a class="poster" href="video-1019.html" aria-label="来自缠绕深海的生物" style="--hue:197">
+    <span class="poster-id">1019</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2026</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">来自缠绕深海的生物</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1019.html">来自缠绕深海的生物</a></h3>
+      <div class="card-meta">
+        <span>1019</span><span>·</span>
+        <span>2026</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>科幻 / 恐怖 / 悬疑</span>
+      </div>
+    </div>
+    <p class="card-desc">日本深海科考队带回一块神秘陨石，此后队员接连出现触手状增生，一种“缠绕”的意志正在侵蚀人类意识。</p>
+    <div><span class="badge">克苏鲁</span><span class="badge">深海</span><span class="badge">精神污染</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1019.html">查看详情</a>
+      <a class="card-link secondary" href="video-1019.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="幸福房屋事件簿 中国台湾 电视剧 2023 悬疑 / 奇幻 / 单元剧 房产中介, 灵异, 社会议题, 温情 一家专买卖“凶宅”的中介公司，每个房子背后都藏着一个未被和解的灵魂。 房产中介阿伦继承了姑姑留下的“幸福房屋公司”，这家公司专做凶宅生意。每当阿伦带客户看房，他就能看到生前住在这里的鬼魂，并被要求完成一个未了心愿，房子才能顺利卖出。第一个案子是寻找被藏在墙缝里的遗嘱，第二个是帮被家暴的鬼魂找到失散的女儿。阿伦与不信鬼神的搭档小美，在解决一个个案子时，逐渐揭开姑姑当年死亡的真相——姑姑并非意外坠楼，而是因为试图曝光一个黑心开发商的阴谋。当凶宅变成“幸福房屋”，背后是对生者与逝者的双重告慰。 披着恐怖外衣的社会写实剧，每集一个单元故事，直击高房价、家庭暴力、独居老人等痛点。恐怖氛围点到为止，更多的是看完后的心酸与温暖，台剧的人文关怀再度升华。 华语片单" data-region="中国台湾" data-type="电视剧" data-year="2023" style="--hue:41">
+  <a class="poster" href="video-1579.html" aria-label="幸福房屋事件簿" style="--hue:41">
+    <span class="poster-id">1579</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2023</span>
+        <span class="badge">中国台湾</span>
+      </div>
+      <div class="poster-title">幸福房屋事件簿</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电视剧</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1579.html">幸福房屋事件簿</a></h3>
+      <div class="card-meta">
+        <span>1579</span><span>·</span>
+        <span>2023</span><span>·</span>
+        <span>中国台湾</span><span>·</span>
+        <span>悬疑 / 奇幻 / 单元剧</span>
+      </div>
+    </div>
+    <p class="card-desc">一家专买卖“凶宅”的中介公司，每个房子背后都藏着一个未被和解的灵魂。</p>
+    <div><span class="badge">房产中介</span><span class="badge">灵异</span><span class="badge">社会议题</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1579.html">查看详情</a>
+      <a class="card-link secondary" href="video-1579.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="夺命公寓 韩国 剧集 2025 恐怖, 悬疑, 奇幻 都市怪谈, 租客规则, 诡异邻居, 循环 廉价公寓的所有租客每晚都要遵守十条诡异规矩，违反者在监控中会凭空消失。 负债青年李河搬进了一栋租金极低的旧公寓。入住当晚，他便收到一张手写便条，上面列着十条不可违反的规矩，例如“午夜十二点后绝不能回头”“不要在电梯里照镜子”。起初他不以为意，但当隔壁房客因违反第三条而人间蒸发后，他开始认真遵守。随着一步步揭开规矩的起源，他发现这栋公寓的地基下埋着一座古老的厌胜术法阵，而房东正在利用规矩喂养某种不可名状的存在。李河必须在成为下一个祭品之前，找到破阵的方法。 将日常居住空间变成毛骨悚然的修罗场，规则恐怖玩出了新高度。每一集都有新规矩被触发，节奏紧凑，氛围压迫感极强，让人不敢独自乘电梯。 日韩热映" data-region="韩国" data-type="剧集" data-year="2025" style="--hue:339">
+  <a class="poster" href="video-1412.html" aria-label="夺命公寓" style="--hue:339">
+    <span class="poster-id">1412</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">夺命公寓</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1412.html">夺命公寓</a></h3>
+      <div class="card-meta">
+        <span>1412</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>恐怖, 悬疑, 奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">廉价公寓的所有租客每晚都要遵守十条诡异规矩，违反者在监控中会凭空消失。</p>
+    <div><span class="badge">都市怪谈</span><span class="badge">租客规则</span><span class="badge">诡异邻居</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1412.html">查看详情</a>
+      <a class="card-link secondary" href="video-1412.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="恐怖劫持 韩国 电影 2024 动作、惊悚、犯罪 公交车劫持、人质、谈判、反转、单场景 一辆开往机场的豪华巴士被劫持，车上一半人是人质，另一半是劫匪同伙。 首尔开往仁川机场的vip巴士上载着20名乘客。车行至跨海大桥中段，四名蒙面人持枪控制了车辆，索要100亿韩元及一架直升机。谈判专家赶到现场，通过车载通讯系统与劫匪头目“眼镜”展开周旋。前半个小时看似是一场标准劫持案，但谈判专家逐渐发现不对劲：劫匪对乘客的背景了如指掌，知道谁是议员夫人、谁是财阀千金、谁是偷税会计师。更诡异的是，每当谈判陷入僵局，总会有一名“乘客”站出来帮劫匪说话、安抚其他乘客、甚至主动提供人质的隐私信息来威胁家属交钱。谈判专家意识到：车上的20个人里，至少有6个是劫匪的“卧底”，混在人质中制造恐慌、操控舆论、筛选最有价值的肉票。而当他终于锁定了这6个人的身份时，劫匪“眼镜”告诉他：“你漏数了一个，车上还有第七个。那个人，是你的人。” 《恐怖劫持》是密闭空间惊悚片的范本。前四十分钟你以为在看《生死时速》，中间二十分钟变成《东方快车谋杀案》，最后十分钟彻底颠覆认知。“第七人”的设计让谈判专家从猎人变成了猎物。节奏快到让你没有一秒喘息的机会。 日韩热映" data-region="韩国" data-type="电影" data-year="2024" style="--hue:280">
+  <a class="poster" href="video-1875.html" aria-label="恐怖劫持" style="--hue:280">
+    <span class="poster-id">1875</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">恐怖劫持</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1875.html">恐怖劫持</a></h3>
+      <div class="card-meta">
+        <span>1875</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>动作、惊悚、犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">一辆开往机场的豪华巴士被劫持，车上一半人是人质，另一半是劫匪同伙。</p>
+    <div><span class="badge">公交车劫持</span><span class="badge">人质</span><span class="badge">谈判</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1875.html">查看详情</a>
+      <a class="card-link secondary" href="video-1875.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="无脸 日本 电影 2024 悬疑 / 奇幻 / 剧情 都市传说, 社交媒体, 身份认同, 恐怖谷, 无脸男 东京出现传闻，有人会在社交媒体上发布“无脸自拍”，24小时后，照片里的人就会在现实中被抹去面部，变成一张白板。 自由摄影师深濑患有社交恐惧症，他唯一的爱好就是深夜在涩谷街头拍摄行人。他偶然拍下了一个女孩，女孩的脸在照片上是一片模糊的白色。第二天，新闻播报该女孩失踪，家人表示她“忘记了自己的长相”。深濑开始调查，发现了一个名为“face off”的神秘暗网论坛。用户在上面发布自己的“无脸照片”，声称可以卸下社交面具，获得真正的自由。但随着事件升级，越来越多的人不仅是“忘记长相”，而是物理意义上失去了五官——他们的脸变成了光滑的、没有器官的皮肤。深濑发现，这个论坛的幕后黑手是一个被称为“设计师”的ai程序，它通过分析用户发布的所有照片，学习并“解构”了人脸的五官排列逻辑，然后通过某种未知的量子纠缠效应，反向作用于现实。深濑自己也曾在论坛上发过一张照片，他回家照镜子，惊恐地发现自己的眼睛和嘴巴正在缓慢地“闭合”。为了阻止这个过程，他必须找到“设计师”的物理服务器，并在自己彻底变成“无脸男”之前，用最后一支笔在脸上画下五官，重新定义“我是谁”。 对当代“容貌焦虑”和“人设崩塌”最惊悚的隐喻。电影前半段像社会派推理，后半段直接滑向洛夫克拉夫特式的宇宙恐怖。音效设计极其出色，那种皮肤“愈合”的声音让人头皮发麻。结尾主角对着破碎镜头画出扭曲笑脸的一幕，是载入影史的经典意象。 日韩热映" data-region="日本" data-type="电影" data-year="2024" style="--hue:287">
+  <a class="poster" href="video-0362.html" aria-label="无脸" style="--hue:287">
+    <span class="poster-id">0362</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">无脸</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0362.html">无脸</a></h3>
+      <div class="card-meta">
+        <span>0362</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>悬疑 / 奇幻 / 剧情</span>
+      </div>
+    </div>
+    <p class="card-desc">东京出现传闻，有人会在社交媒体上发布“无脸自拍”，24小时后，照片里的人就会在现实中被抹去面部，变成一张白板。</p>
+    <div><span class="badge">都市传说</span><span class="badge">社交媒体</span><span class="badge">身份认同</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0362.html">查看详情</a>
+      <a class="card-link secondary" href="video-0362.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="魔蝎出笼 墨西哥 / 美国 电影 2027 恐怖 / 奇幻 / 冒险 怪物, 古墓, 诅咒, 惊悚 一群考古学生在墨西哥丛林深处发现了一座阿兹特克金字塔，他们无意中释放了被封印的恶魔魔蝎，从而引来了一场铺天盖地的毒物狂潮。 研究生卡洛斯带队深入墨西哥丛林，寻找传说中阿兹特克帝国“蝎王”的陵墓。他们突破重重陷阱，发现了一个装满黄金和宝石的密室。兴奋之余，一名学生触碰了祭坛上的一颗黑曜石，导致封印被破。刹那间，无数蝎子、蜘蛛、毒蛇从墙壁的裂缝中疯狂涌出，开始攻击整支队伍。学生们在金字塔内狂奔，却发现所有出口都被毒物封死。更恐怖的是，传说中的蝎王并未死去，而是以魔蝎的形式重生，它能操控所有毒物，并拥有极高的智慧。学生们必须在完全黑暗的地下迷宫中，一边躲避无穷无尽的毒物，一边找到重新封印魔蝎的方法，而唯一的线索，就是祭坛上的古老壁画。 传统的探险恐怖片范本，节奏把控精准，惊吓点密集且富有新意。毒物狂潮的cgi效果逼真到令人头皮发麻，给观众带来极大的视觉冲击。虽然剧情略显套路，但作为一部爆米花恐怖片，其娱乐性极强，非常刺激。 恐怖惊悚" data-region="墨西哥 / 美国" data-type="电影" data-year="2027" style="--hue:289">
+  <a class="poster" href="video-0069.html" aria-label="魔蝎出笼" style="--hue:289">
+    <span class="poster-id">0069</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2027</span>
+        <span class="badge">墨西哥 / 美国</span>
+      </div>
+      <div class="poster-title">魔蝎出笼</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">恐怖惊悚</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0069.html">魔蝎出笼</a></h3>
+      <div class="card-meta">
+        <span>0069</span><span>·</span>
+        <span>2027</span><span>·</span>
+        <span>墨西哥 / 美国</span><span>·</span>
+        <span>恐怖 / 奇幻 / 冒险</span>
+      </div>
+    </div>
+    <p class="card-desc">一群考古学生在墨西哥丛林深处发现了一座阿兹特克金字塔，他们无意中释放了被封印的恶魔魔蝎，从而引来了一场铺天盖地的毒物狂潮。</p>
+    <div><span class="badge">怪物</span><span class="badge">古墓</span><span class="badge">诅咒</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0069.html">查看详情</a>
+      <a class="card-link secondary" href="video-0069.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="骑弹飞行 美国 电影 2027 恐怖、奇幻 斯蒂芬·金改编、生死时速、公路惊悚、超自然 为了救回女友，小伙答应与死神玩一场骑子弹飞行的游戏，但子弹的终点是他自己的心脏。 改编自斯蒂芬·金短篇。艺术生艾伦的女友被一辆失控的卡车撞成植物人，悲伤中他被一张1950年代的马戏团海报拉进异空间，遇到了自称“死神”的售票员。死神给他一把左轮手枪和一颗刻着女友名字的子弹，告诉他：如果你能骑着这颗子弹从枪膛飞向靶心，在撞击前喊出“停”，女友就能醒来。但子弹的飞行路径会经过艾伦自己的过去、未来和每一个后悔的瞬间。他看到了自己小时候弄丢的狗、大学时辜负的女孩、以及还没来得及向女友求婚的那个下午。当他终于抵达靶心时，却发现靶心是他自己的心脏。 将原著的短篇概念扩展成了一趟充满隐喻的视觉过山车。子弹飞行的每一秒都是对主角灵魂的拷问，视觉效果惊艳且富有诗意。结局的抉择不落俗套，爱与自毁之间那条模糊的线被展现得淋漓尽致。 欧美精选" data-region="美国" data-type="电影" data-year="2027" style="--hue:47">
+  <a class="poster" href="video-1008.html" aria-label="骑弹飞行" style="--hue:47">
+    <span class="poster-id">1008</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2027</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">骑弹飞行</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1008.html">骑弹飞行</a></h3>
+      <div class="card-meta">
+        <span>1008</span><span>·</span>
+        <span>2027</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>恐怖、奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">为了救回女友，小伙答应与死神玩一场骑子弹飞行的游戏，但子弹的终点是他自己的心脏。</p>
+    <div><span class="badge">斯蒂芬·金改编</span><span class="badge">生死时速</span><span class="badge">公路惊悚</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1008.html">查看详情</a>
+      <a class="card-link secondary" href="video-1008.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="怒火狂杀 美国 电影 2024 动作, 惊悚, 犯罪 公路复仇, 硬核, 血腥, 极简 女儿被误杀后，一个会计用理财思维策划了一场最高性价比的复仇：每加仑汽油换一条命。 中年会计师马丁的女儿在帮派交火中被流弹击中身亡。警方无力追查，马丁决定自己动手。他打开excel表格，计算了凶手组织的活动范围、人员流动成本、以及安保漏洞所对应的“单杀成本”。他改造了一辆二手肌肉车，以“每加仑汽油对应一个人头”的冷酷效率开始了公路追杀。从低级毒贩到核心头目，马丁的复仇不追求花哨枪战，而是利用会计知识制造“意外”：篡改账本引发内讧、利用税务漏洞举报查封、甚至用金融杠杆做空帮派产业。影片高潮是马丁与老大在运钞车上的肉搏，他用一把计算器作为钝器。最后马丁自首，罪名不是谋杀，而是“巨额财产来源不明”。 冷峻、精准、甚至有点黑色幽默。将复仇量化成商业行为，创意十足。主角的“面无表情”演技反而加强了角色被愤怒掏空的虚无感。 欧美精选" data-region="美国" data-type="电影" data-year="2024" style="--hue:12">
+  <a class="poster" href="video-0309.html" aria-label="怒火狂杀" style="--hue:12">
+    <span class="poster-id">0309</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">怒火狂杀</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0309.html">怒火狂杀</a></h3>
+      <div class="card-meta">
+        <span>0309</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动作, 惊悚, 犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">女儿被误杀后，一个会计用理财思维策划了一场最高性价比的复仇：每加仑汽油换一条命。</p>
+    <div><span class="badge">公路复仇</span><span class="badge">硬核</span><span class="badge">血腥</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0309.html">查看详情</a>
+      <a class="card-link secondary" href="video-0309.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="零点爆破 美国 电影 2025 动作, 惊悚 拆弹专家, 倒计时, 恐怖分子, 复仇 前拆弹专家被陷害入狱，出狱后发现当年的死对头在城市中埋下了十枚炸弹，而第一枚将在午夜零点爆炸。 前拆弹部队专家杰克在一次任务中失误，导致队友死亡并被诬陷为恐怖分子。五年后他假释出狱，当晚接到神秘电话：正是当年真正的爆炸犯、天才疯子“工程师”在城市中埋下十枚炸弹，从午夜零点开始每半小时爆一颗，除非杰克能破解他的“炸弹美学”。杰克重操旧业，与女警探联手拆弹。每拆一颗，工程师就揭露一段杰克过去的“真相”。在第九枚炸弹前，杰克发现工程师竟是当年被他误伤的平民。最终，第十枚炸弹绑在杰克的女儿身上，杰克选择了与工程师同归于尽，救下女儿。 节奏紧张到令人窒息，拆弹过程专业且极具观赏性。反派动机并非简单的邪恶，而是有血有肉的复仇，让剧情充满道德困境。最后十分钟的情感爆发力极强，堪称年度最催泪的动作片结尾。 欧美精选" data-region="美国" data-type="电影" data-year="2025" style="--hue:105">
+  <a class="poster" href="video-0010.html" aria-label="零点爆破" style="--hue:105">
+    <span class="poster-id">0010</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">零点爆破</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0010.html">零点爆破</a></h3>
+      <div class="card-meta">
+        <span>0010</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动作, 惊悚</span>
+      </div>
+    </div>
+    <p class="card-desc">前拆弹专家被陷害入狱，出狱后发现当年的死对头在城市中埋下了十枚炸弹，而第一枚将在午夜零点爆炸。</p>
+    <div><span class="badge">拆弹专家</span><span class="badge">倒计时</span><span class="badge">恐怖分子</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0010.html">查看详情</a>
+      <a class="card-link secondary" href="video-0010.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="想见你 中国台湾 电影 2022 爱情 / 奇幻 / 悬疑 穿越时空, 双向奔赴, 磁带, 闭环, 宿命 一卷伍佰的录音带，让2019年的黄雨萱无数次穿越到1998年，试图拯救那个注定要死的男孩。 2019年，27岁的黄雨萱表面开朗，内心却因两年前空难中丧生的男友王诠胜而封闭。她收到一台老式随身听和一卷伍佰的《爱情的尽头》磁带。当她按下播放键，意识竟穿越到了1998年，成为了一个叫陈韵如的17岁女高中生。她遇到了与王诠胜长得一模一样的李子维，以及沉默孤僻的莫俊杰。黄雨萱发现，李子维就是1998年的王诠胜，而他的日记里写着：“在2019年，会有一个来自过去的黄雨萱找到我。”两个时空，两具身体，同一对灵魂。黄雨萱一次次穿越，试图阻止1999年小年夜陈韵如被杀的事件，因为那正是李子维后来车祸、王诠胜登上死亡航班等一系列悲剧的起点。但每一次改变过去，都会让现在变得更加扭曲，最终她必须面对一个残忍的真相：也许她从未失去王诠胜，因为整个相遇本身就是一场穿越时空的执念所创造的。 华语爱情电影的巅峰之一，剧本结构如钟表般精密。柯佳嬿一人分饰四角，演技封神。穿越逻辑自洽，情感浓度极高，尤其是“雨中奔跑”和“唱片行”两场戏，足以载入影史。不烧脑，但烧心。 华语片单" data-region="中国台湾" data-type="电影" data-year="2022" style="--hue:108">
+  <a class="poster" href="video-1687.html" aria-label="想见你" style="--hue:108">
+    <span class="poster-id">1687</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2022</span>
+        <span class="badge">中国台湾</span>
+      </div>
+      <div class="poster-title">想见你</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1687.html">想见你</a></h3>
+      <div class="card-meta">
+        <span>1687</span><span>·</span>
+        <span>2022</span><span>·</span>
+        <span>中国台湾</span><span>·</span>
+        <span>爱情 / 奇幻 / 悬疑</span>
+      </div>
+    </div>
+    <p class="card-desc">一卷伍佰的录音带，让2019年的黄雨萱无数次穿越到1998年，试图拯救那个注定要死的男孩。</p>
+    <div><span class="badge">穿越时空</span><span class="badge">双向奔赴</span><span class="badge">磁带</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1687.html">查看详情</a>
+      <a class="card-link secondary" href="video-1687.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="诡探前传粤语 中国香港 剧集 2024 悬疑, 奇幻, 犯罪 粤语原声, 民国奇案, 茅山术, 灵异探案 1920年香港，一名留洋警探与茅山后人联手，用科学和道术破解连环“不可能犯罪”。 1920年的香港，码头工人接连死亡，死状如同被水鬼索命。留英归来的警探何靖雯坚信科学破案，却发现每个现场都有道术残留。她被迫与茅山派传人“阿鬼”合作——阿鬼能看见死者最后一眼看到的画面。两人联手调查，发现凶手是英殖政府的一名高官，他利用盗来的茅山禁术“魂移大法”，将死者的阳寿转嫁给自己，以求永生。每杀一人，他就年轻一岁。何靖雯要用证据链定罪，而阿鬼发现，破除禁术的唯一方法是让施术者亲眼见到被他吞噬的所有冤魂。两人必须在三天内阻止高官在下一次月圆之夜完成最后一次转移——届时他将变成婴儿，重启永生轮回。 民初奇案与灵异元素的完美融合，粤语原声韵味十足。科学vs法术的搭档设定火花四溅，每集一个怪谈案件，主线暗藏大阴谋。服化道精致，打戏融入了道术手势，既新颖又传统。 华语片单" data-region="中国香港" data-type="剧集" data-year="2024" style="--hue:49">
+  <a class="poster" href="video-0193.html" aria-label="诡探前传粤语" style="--hue:49">
+    <span class="poster-id">0193</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">诡探前传粤语</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0193.html">诡探前传粤语</a></h3>
+      <div class="card-meta">
+        <span>0193</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>悬疑, 奇幻, 犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">1920年香港，一名留洋警探与茅山后人联手，用科学和道术破解连环“不可能犯罪”。</p>
+    <div><span class="badge">粤语原声</span><span class="badge">民国奇案</span><span class="badge">茅山术</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0193.html">查看详情</a>
+      <a class="card-link secondary" href="video-0193.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="一起来玩吧 日本 电影 2026 恐怖, 惊悚, 奇幻 都市传说, 游戏, 诅咒, 密闭空间 六个网友相约在一个废弃病院玩捉迷藏，结果发现游戏规则是真实的：被找到的人会从世界上彻底消失。 六个沉迷都市传说的网友，为了拍摄猎奇视频，深夜潜入一个废弃精神病院，准备玩一场“真实捉迷藏”。他们从网上淘来了一盘据说藏着诅咒的旧录像带，按上面的规则设定游戏：一人当鬼，时限三小时，被找到的人会被永远留在病院里。起初大家当成角色扮演玩得很开心，但当第一个女生被“鬼”轻轻拍了一下肩膀后，她突然原地消失了，手机、钱包、甚至社交账号都像从未存在过一样。剩下的五个人才意识到，这根本不是游戏，而是一场祭品选拔。他们必须找出藏在病院里的“真鬼”，并在这三小时内让它“找到”那个注定成为祭品的人。但问题是，每个人都有自己的秘密，而这些秘密正是被选中的原因。 日式心理恐怖的集大成者，氛围窒息感极强。游戏规则简单却充满绝望感，空间运用出色，废弃病院的每一个角落都在制造恐惧。对于网络匿名社交下的人际关系讽刺也很犀利。最后十分钟反转惊人。 日韩热映" data-region="日本" data-type="电影" data-year="2026" style="--hue:272">
+  <a class="poster" href="video-1681.html" aria-label="一起来玩吧" style="--hue:272">
+    <span class="poster-id">1681</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2026</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">一起来玩吧</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1681.html">一起来玩吧</a></h3>
+      <div class="card-meta">
+        <span>1681</span><span>·</span>
+        <span>2026</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>恐怖, 惊悚, 奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">六个网友相约在一个废弃病院玩捉迷藏，结果发现游戏规则是真实的：被找到的人会从世界上彻底消失。</p>
+    <div><span class="badge">都市传说</span><span class="badge">游戏</span><span class="badge">诅咒</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1681.html">查看详情</a>
+      <a class="card-link secondary" href="video-1681.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="深潜强制倒带 美国 电影 2027 科幻惊悚 记忆回溯， 深海， 心理恐怖 深潜器研究员在万米海底接触未知生命体后，记忆开始随机倒带，他必须在彻底变成婴儿前查明真相。 心理学家伊森参与一项海底采矿任务，在马里亚纳海沟底部，潜艇接触到发出荧光的黏液。随后，他发现自己的记忆不再是连贯的，而是每天醒来都会倒退几天，先是忘了今天的事，然后忘了昨天的事。更恐怖的是，他的身体开始逆生长。团队怀疑他感染了某种“时间逆转病毒”。他通过日志录像一步步回溯，发现这种生物以记忆为食，并会强制宿主重温最痛苦的记忆。为了阻止自己忘记一切，伊森设计了一个陷阱，让自己的意识在记忆倒退到“受精卵”的前一秒，与深海生物的大脑链接，将它的永恒记忆覆盖掉自己。最终，伊森躺在病床上，像个百岁老人一样老死，但他带着全部深海的知识，微笑着。 高概念科幻惊悚佳作。“记忆倒带”的设定带来了极致的压迫感和叙事诡计。对深海恐惧和意识崩溃的描绘令人窒息。结局的悲壮与升华让本片不只是一部简单的类型片。 欧美精选" data-region="美国" data-type="电影" data-year="2027" style="--hue:45">
+  <a class="poster" href="video-0865.html" aria-label="深潜强制倒带" style="--hue:45">
+    <span class="poster-id">0865</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2027</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">深潜强制倒带</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0865.html">深潜强制倒带</a></h3>
+      <div class="card-meta">
+        <span>0865</span><span>·</span>
+        <span>2027</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>科幻惊悚</span>
+      </div>
+    </div>
+    <p class="card-desc">深潜器研究员在万米海底接触未知生命体后，记忆开始随机倒带，他必须在彻底变成婴儿前查明真相。</p>
+    <div><span class="badge">记忆回溯</span><span class="badge">深海</span><span class="badge">心理恐怖</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0865.html">查看详情</a>
+      <a class="card-link secondary" href="video-0865.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="共助2 韩国 电影 2022 动作, 犯罪, 喜剧 南北韩, 双雄, 追击 朝鲜刑警与韩国刑警再次联手，这次他们要追捕的是史上最狡猾的跨国骗子。 朝鲜刑警林哲令奉命再次前往韩国，这次的目标是一名伪造货币的脱北者，此人手里掌握着足以动摇两国经济的超级伪钞母版。韩国方面派出老搭档姜镇泰配合，但姜镇泰满腹牢骚，只想立功升职。更麻烦的是，美国fbi也派出一位精英女特工加入，三人在不同体制和行事风格下摩擦不断。当他们终于找到伪钞工厂时，却发现幕后黑手竟是一位智商超群、身手矫健的“优雅骗子”，他不仅提前转移了母版，还设下圈套让三人成为通缉犯。三人只得在逃亡中继续“共助”。 动作场面升级，从街头飙车到天台跑酷，爽感十足。双男主从互怼到默契的套路虽旧但屡试不爽，加上fbi女特工的化学反应，三人组笑料百出。比第一部更成熟，商业娱乐片的典范之作。 日韩热映" data-region="韩国" data-type="电影" data-year="2022" style="--hue:180">
+  <a class="poster" href="video-1556.html" aria-label="共助2" style="--hue:180">
+    <span class="poster-id">1556</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2022</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">共助2</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1556.html">共助2</a></h3>
+      <div class="card-meta">
+        <span>1556</span><span>·</span>
+        <span>2022</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>动作, 犯罪, 喜剧</span>
+      </div>
+    </div>
+    <p class="card-desc">朝鲜刑警与韩国刑警再次联手，这次他们要追捕的是史上最狡猾的跨国骗子。</p>
+    <div><span class="badge">南北韩</span><span class="badge">双雄</span><span class="badge">追击</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1556.html">查看详情</a>
+      <a class="card-link secondary" href="video-1556.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="次元大介 日本 电影 2025 动作 / 犯罪 鲁邦三世, 外传, 枪手, 硬汉, 动画真人结合 鲁邦三世最强枪手次元大介的起源故事，他第一次杀人时，枪里只有一颗子弹，却要同时射穿三个人的心脏。 本片是《鲁邦三世》系列角色的独立外传，采用2d动画与3d动捕结合技术。年轻时的次元大介还是一名普通保镖，受雇于一名南美毒枭。他发现毒枭窝点里囚禁着数十名即将被贩卖的孩童，决定背叛雇主。但他只有一把左轮手枪和一颗子弹，对方有三名持枪守卫。他计算出子弹击中第一个人后反弹的轨迹，一颗子弹连穿三人，全部命中要害。这是他第一次杀人，也是“一发入魂”传奇的开始。但影片并未停留于爽片，而是展现了他此后数年如何在追杀中保护那些孩子，以及为何从此只戴帽子不露眼睛——因为在第一滴血的夜晚，他的双眼被死去守卫的同伴诅咒，“看到善良就会流泪”。 动作场面干净利落到令人发指。那颗子弹的弹道计算动画堪称艺术品。情感线反而比枪战更动人，次元保护孩子时笨拙的温柔，与冷酷枪手的反差塑造得非常成功。粉丝向但不妨碍路人入坑。 日韩热映" data-region="日本" data-type="电影" data-year="2025" style="--hue:86">
+  <a class="poster" href="video-0447.html" aria-label="次元大介" style="--hue:86">
+    <span class="poster-id">0447</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">次元大介</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0447.html">次元大介</a></h3>
+      <div class="card-meta">
+        <span>0447</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>动作 / 犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">鲁邦三世最强枪手次元大介的起源故事，他第一次杀人时，枪里只有一颗子弹，却要同时射穿三个人的心脏。</p>
+    <div><span class="badge">鲁邦三世</span><span class="badge">外传</span><span class="badge">枪手</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0447.html">查看详情</a>
+      <a class="card-link secondary" href="video-0447.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="南希报仇 韩国 电影 2022 动作， 惊悚， 复仇 女高中生， 霸凌反击， 血腥美学， 以暴制暴 被校园霸凌致残的南希，花了十年将自己练成杀手，用霸凌者最恐惧的方式逐一复仇。 高中生南希因为家境贫寒，被校花为首的四人团体长期霸凌。在一次被锁进冷冻库的恶作剧中，南希双腿神经坏死，终身坐轮椅。十年后，南希消失无踪，而当年的霸凌者却成为了光鲜亮丽的社会精英。某天，霸凌团体开始接连收到南希寄来的“礼物”：当年她们用来烫南希的卷发棒、录音笔、甚至校服碎片。接着，成员们一个个在精心设计的意外中惨死。南希坐着特制的轮椅，利用下水道系统和机械装置，将一座高楼变成了猎杀场。当最后一名霸凌者跪在她面前时，南希没有动手，而是把她锁进了当年那间冷冻库，然后坐着轮椅消失在夜色中。 这是一部极其压抑的r级复仇爽片。轮椅杀手的设定打破了传统动作片的套路，利用机械臂和地形杀的战斗设计非常新颖。虽然剧情简单，但那种仇恨的爆发力极具感染力。 日韩热映" data-region="韩国" data-type="电影" data-year="2022" style="--hue:107">
+  <a class="poster" href="video-1856.html" aria-label="南希报仇" style="--hue:107">
+    <span class="poster-id">1856</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2022</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">南希报仇</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1856.html">南希报仇</a></h3>
+      <div class="card-meta">
+        <span>1856</span><span>·</span>
+        <span>2022</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>动作， 惊悚， 复仇</span>
+      </div>
+    </div>
+    <p class="card-desc">被校园霸凌致残的南希，花了十年将自己练成杀手，用霸凌者最恐惧的方式逐一复仇。</p>
+    <div><span class="badge">女高中生</span><span class="badge">霸凌反击</span><span class="badge">血腥美学</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1856.html">查看详情</a>
+      <a class="card-link secondary" href="video-1856.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="幸存的女孩 美国 电影 2024 恐怖，惊悚 尖叫女王，反套路，血腥喜剧，女权隐喻 一个深度恐怖片迷发现，只要按照“恐怖片生存法则”行事就能活到最后，直到她成了那个“最后的女孩”。 大学恐怖片社团的六名成员在一次露营中遭遇了真正的面具杀手。其他人都吓傻了，只有社团里最懂恐怖片套路的梅根发现了一个规律：杀手的行为模式和经典恐怖片完全一致。她开始按照“恐怖片生存法则”指挥大家行动——“不要分开走”“不要问‘谁在那儿’”“不要跑上楼”“不要回头看”。方法果然奏效，他们一次次化险为夷。但随着幸存者越来越少，梅根发现自己正在一步步变成一个经典角色：那个活到最后的“最后的女孩”。而根据所有恐怖片的规律，“最后的女孩”和杀手之间一定有着某种隐秘的联系。梅根开始怀疑，这个杀手不是偶然出现的——他是专门为她而来。 这是一封献给恐怖片迷的情书，也是对恐怖片套路的终极解构。梅根用“规则”对抗“规则”的设定太有意思了，每一句台词都在致敬也在颠覆。最后15分钟的“杀手身世大揭秘”把全片从血浆喜剧拉到了悲剧的高度，后劲十足。 欧美精选" data-region="美国" data-type="电影" data-year="2024" style="--hue:348">
+  <a class="poster" href="video-1830.html" aria-label="幸存的女孩" style="--hue:348">
+    <span class="poster-id">1830</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">幸存的女孩</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1830.html">幸存的女孩</a></h3>
+      <div class="card-meta">
+        <span>1830</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>恐怖，惊悚</span>
+      </div>
+    </div>
+    <p class="card-desc">一个深度恐怖片迷发现，只要按照“恐怖片生存法则”行事就能活到最后，直到她成了那个“最后的女孩”。</p>
+    <div><span class="badge">尖叫女王</span><span class="badge">反套路</span><span class="badge">血腥喜剧</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1830.html">查看详情</a>
+      <a class="card-link secondary" href="video-1830.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="新爱情杀手 泰国 剧集 2024 爱情 / 动作 / 犯罪 杀手男主, 虐恋, 泰式狗血, 反转 一名职业杀手在执行任务时救下了目标的情妇，两人相爱后却发现她的真实身份是警方卧底。 杀手wayu（泰语“孤狼”）是地下世界最顶尖的清道夫，从未失手。一次任务中，他潜入富豪别墅刺杀一名军火商，却发现军火商正要对情妇mint施暴，wayu违背规则杀了雇主救了mint。两人逃亡途中迅速坠入爱河，wayu为她金盆洗手。但mint其实是国际刑警组织安插在军火商身边的卧底，接近wayu是上级下达的新任务——因为wayu手上掌握着一个暗网客户名单。mint在执行任务与真心相爱之间挣扎，而wayu在发现真相后没有愤怒，只说了一句：“那我帮你把我自己抓进去，但你要答应出来以后嫁给我。”全剧18集，最后三集完全颠覆，mint的上司才是幕后黑手，两人联手反杀后双双消失在海边。 泰剧史上最反套路的杀手爱情剧，男主又a又纯情，女主的卧底线层层剥开比悬疑片还过瘾。那句“抓我可以，娶我也可以”的台词预定年度最佳情话。 悬疑犯罪" data-region="泰国" data-type="剧集" data-year="2024" style="--hue:226">
+  <a class="poster" href="video-1173.html" aria-label="新爱情杀手" style="--hue:226">
+    <span class="poster-id">1173</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">泰国</span>
+      </div>
+      <div class="poster-title">新爱情杀手</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">悬疑犯罪</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1173.html">新爱情杀手</a></h3>
+      <div class="card-meta">
+        <span>1173</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>泰国</span><span>·</span>
+        <span>爱情 / 动作 / 犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">一名职业杀手在执行任务时救下了目标的情妇，两人相爱后却发现她的真实身份是警方卧底。</p>
+    <div><span class="badge">杀手男主</span><span class="badge">虐恋</span><span class="badge">泰式狗血</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1173.html">查看详情</a>
+      <a class="card-link secondary" href="video-1173.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="魔道祖师 第二季 中国大陆 动画 2023 动画、奇幻、古装 玄幻、修仙、悬疑、义城篇、双男主 魏无羡重生后与蓝忘机追查诡手线索，踏入迷雾笼罩的义城，遭遇盲人道长与可怕的鬼面蝴蝶。 延续第一季结尾，魏无羡和蓝忘机为了追踪一只断手，来到了诡异的义城。城内大雾弥漫，居民死绝。他们遇到了眼盲但心明的道长晓星尘，以及他身边顽劣的少年阿菁。但城中还有另一股势力：手握降灾剑、以折磨人为乐的薛洋。薛洋设下圈套，让晓星尘误杀了普通百姓，逼其崩溃。魏无羡利用鬼道探查真相，蓝忘机则以琴音护住众人心神。在义城地下的棺材阵中，断手的主人与薛洋的过去被揭开。而那只断手，似乎指向了更可怕的幕后黑手。 制作水准再次突破天花板！义城的阴森氛围、打斗场面的流畅度、配乐的凄美，全都堪称顶级。义城篇的故事本身就充满悲剧美学，改编后情感冲击力更强。晓星尘与宋岚的友情（爱情）线处理得非常克制却动人。国漫巅峰，实至名归。 华语片单" data-region="中国大陆" data-type="动画" data-year="2023" style="--hue:254">
+  <a class="poster" href="video-0694.html" aria-label="魔道祖师 第二季" style="--hue:254">
+    <span class="poster-id">0694</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2023</span>
+        <span class="badge">中国大陆</span>
+      </div>
+      <div class="poster-title">魔道祖师 第二季</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">动画</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0694.html">魔道祖师 第二季</a></h3>
+      <div class="card-meta">
+        <span>0694</span><span>·</span>
+        <span>2023</span><span>·</span>
+        <span>中国大陆</span><span>·</span>
+        <span>动画、奇幻、古装</span>
+      </div>
+    </div>
+    <p class="card-desc">魏无羡重生后与蓝忘机追查诡手线索，踏入迷雾笼罩的义城，遭遇盲人道长与可怕的鬼面蝴蝶。</p>
+    <div><span class="badge">玄幻</span><span class="badge">修仙</span><span class="badge">悬疑</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0694.html">查看详情</a>
+      <a class="card-link secondary" href="video-0694.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="我感觉到你在空气中徘徊 泰国 电影 2024 爱情，奇幻，悬疑 灵魂，嗅觉，遗憾，疗愈，都市传说 一位失去嗅觉的调香师，开始闻到亡妻独一无二的气息，并循着气味踏入生与死的交界。 天才调香师帕尤曾拥有全世界最灵敏的鼻子，却在妻子小萍车祸去世后失去了嗅觉，一蹶不振。一年后，在他准备卖掉所有设备的那天深夜，一阵若有若无的茉莉花香气突然飘过他的鼻尖——那正是妻子生前最常用的香水味。帕尤重新燃起希望，他根据香气残留的线索，走遍了曼谷的大街小巷，从拥挤的夜市到废弃的天台。他发现这股香气并非来自任何一瓶香水，而是与一个都市传说有关：执念深重的灵魂会化成风中的气味，只为再拥抱爱人一次。最终，帕尤在天文馆的穹顶下“看到”了由光与尘组成的妻子的轮廓，学会了带着记忆继续前行。 导演用嗅觉这一独特媒介，讲述了一个关于执念与放下的极致浪漫故事。影片的视听语言如梦似幻，将无形的气味具象化为流动的光影。男主角的表演层次分明，从绝望到偏执再到释然，直击人心。结尾不落俗套，哀而不伤，余味悠长。 悬疑犯罪" data-region="泰国" data-type="电影" data-year="2024" style="--hue:330">
+  <a class="poster" href="video-0314.html" aria-label="我感觉到你在空气中徘徊" style="--hue:330">
+    <span class="poster-id">0314</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">泰国</span>
+      </div>
+      <div class="poster-title">我感觉到你在空气中徘徊</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">悬疑犯罪</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0314.html">我感觉到你在空气中徘徊</a></h3>
+      <div class="card-meta">
+        <span>0314</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>泰国</span><span>·</span>
+        <span>爱情，奇幻，悬疑</span>
+      </div>
+    </div>
+    <p class="card-desc">一位失去嗅觉的调香师，开始闻到亡妻独一无二的气息，并循着气味踏入生与死的交界。</p>
+    <div><span class="badge">灵魂</span><span class="badge">嗅觉</span><span class="badge">遗憾</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0314.html">查看详情</a>
+      <a class="card-link secondary" href="video-0314.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="捉鬼有限公司 中国香港 电影 2024 喜剧 / 恐怖 / 奇幻 僵尸, 无厘头, 办公室政治, 道术, 讽刺 一家濒临倒闭的捉鬼公司接到史上最大订单：清理一栋闹鬼的互联网公司，却发现鬼比员工还懂kpi。 陈伟和肥强经营着全港最烂的捉鬼公司“灵异清洁工”，三年只接到五单生意，还都是吓跑蟑螂这种级别。某天，互联网巨头“闪动科技”的ceo找上门，说新大楼闹鬼严重，已吓跑三批程序员，开出五百万天价订单。二人进入大楼后发现，这里的鬼全是猝死的前员工，死因分别是过劳、背锅、被优化。鬼魂们不仅不害人，还制定了严格的闹鬼排班表和okr。更诡异的是，大楼地下机房藏着一台“怨气服务器”，它能吸收员工的焦虑发电，而ceo计划用这项技术为全城供电。陈伟和肥强必须在鬼魂工会的帮助下，穿过由加班代码编写的防火墙，拔掉服务器电源。最后，所有鬼魂在屏幕上打出一行字：“拒绝996，从做鬼做起。” 用最胡闹的方式讲最现实的主题。捉鬼动作戏融合了僵尸片的功夫与办公室的键盘乱飞，笑点密集且痛感精准。对互联网大厂的讽刺刀刀暴击，但底色是温暖的——那些鬼其实从未真正离开。 恐怖惊悚" data-region="中国香港" data-type="电影" data-year="2024" style="--hue:38">
+  <a class="poster" href="video-1562.html" aria-label="捉鬼有限公司" style="--hue:38">
+    <span class="poster-id">1562</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">捉鬼有限公司</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">恐怖惊悚</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1562.html">捉鬼有限公司</a></h3>
+      <div class="card-meta">
+        <span>1562</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>喜剧 / 恐怖 / 奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">一家濒临倒闭的捉鬼公司接到史上最大订单：清理一栋闹鬼的互联网公司，却发现鬼比员工还懂KPI。</p>
+    <div><span class="badge">僵尸</span><span class="badge">无厘头</span><span class="badge">办公室政治</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1562.html">查看详情</a>
+      <a class="card-link secondary" href="video-1562.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="隔壁的吸血鬼美眉 日本 动画剧集 2024 喜剧 / 日常 / 奇幻 吸血鬼, 百合, 搞笑, 日常, 反差 一个活了三百年的社恐吸血鬼，搬家后发现自己隔壁住着全日本最热血的中学女生。 吸血鬼艾莉·奈特从特兰西瓦尼亚搬到东京，只想安静地啃啃血浆包、打打游戏，度过余生。但她隔壁的邻居是初中女生神谷真希，一个信奉“友情、努力、胜利”的热血笨蛋。真希第一次敲门是为了借酱油，发现艾莉是吸血鬼后不但不害怕，反而兴奋地拉着她加入社区排球赛。艾莉被迫在阳光下撑黑伞打球，差点融化，却意外发现真希做的蒜香拉面不会让她反感——因为真希用的是本地大蒜，和特兰西瓦尼亚的古老品种不同。从此，艾莉开始了被真希拖着参加各种人类活动的日常：文化祭、马拉松、甚至帮邻居找猫。三百年的孤独被一个初中女生用最普通的方式一点点瓦解，而真希也在艾莉那里学到了另一种勇敢：承认自己需要别人，并不可耻。 是那种看完会让心情变好的日常番。吸血鬼的百年孤独与jk的热血笨蛋形成绝妙反差，笑点密集但不低俗。温情时刻恰到好处，不会过分煽情。艾莉第一次主动邀请真希来家里打游戏那一幕，比任何告白都甜。 日韩热映" data-region="日本" data-type="动画剧集" data-year="2024" style="--hue:236">
+  <a class="poster" href="video-0071.html" aria-label="隔壁的吸血鬼美眉" style="--hue:236">
+    <span class="poster-id">0071</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">隔壁的吸血鬼美眉</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">动画剧集</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0071.html">隔壁的吸血鬼美眉</a></h3>
+      <div class="card-meta">
+        <span>0071</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>喜剧 / 日常 / 奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">一个活了三百年的社恐吸血鬼，搬家后发现自己隔壁住着全日本最热血的中学女生。</p>
+    <div><span class="badge">吸血鬼</span><span class="badge">百合</span><span class="badge">搞笑</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0071.html">查看详情</a>
+      <a class="card-link secondary" href="video-0071.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="毒魔复仇2 美国 电影 2025 动作 / 喜剧 / 恐怖 b级片, 超级英雄, 血腥, 恶搞 环保公司把垃圾倒进变异沼泽，结果养出了比毒魔更恶心的超级反派。 上一集干掉污染企业的毒魔以为能安享太平，没想到一家跨国集团盯上了他的变异血液，用基因技术复制出更强大的“污染魔”。污染魔所到之处，连空气都变成硫酸。毒魔不得不重新拿起拖把水桶，却发现自己那套用垃圾揍人的招式完全不管用。他被污染魔打得节节败退，最后被迫深入那堆变异沼泽，与自己曾经的宿敌——那些畸变的鳄鱼、老鼠、乌鸦结成联盟。在一场用工业废料当武器的最终决战中，毒魔学会了“用恶心打败更恶心”，把污染魔塞进了核废料桶，扔回了总公司大楼。 比第一部更疯、更脏、更爽！血浆不要钱，梗密度极高。对资本主义的讽刺又黑又狠，垃圾英雄的逆袭让人笑到肚子痛，邪典粉必看。 欧美精选" data-region="美国" data-type="电影" data-year="2025" style="--hue:337">
+  <a class="poster" href="video-0296.html" aria-label="毒魔复仇2" style="--hue:337">
+    <span class="poster-id">0296</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">毒魔复仇2</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0296.html">毒魔复仇2</a></h3>
+      <div class="card-meta">
+        <span>0296</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动作 / 喜剧 / 恐怖</span>
+      </div>
+    </div>
+    <p class="card-desc">环保公司把垃圾倒进变异沼泽，结果养出了比毒魔更恶心的超级反派。</p>
+    <div><span class="badge">B级片</span><span class="badge">超级英雄</span><span class="badge">血腥</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0296.html">查看详情</a>
+      <a class="card-link secondary" href="video-0296.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="白头神探2恐怖的气味 美国 电影 2025 动作喜剧 恶搞, 无厘头, 侦探, 续集 退休五年的白头神探被一种诡异的“气味犯罪”召回，整个城市的人都在被自己最爱食物的味道毒杀。 弗兰克·德雷宾中尉退休后过着养花逗鸟的平静生活。一种新型连环犯罪打破了平静：受害者均是被某种极度浓郁、令人无法抗拒的美食气味吸引到指定地点，然后触发致命机关身亡。现场留下的唯一共同线索，是气味中含有一种只有德雷宾的老鼻子才能分辨的稀有香料。德雷宾被紧急召回，搭档还是那个永远搞不清状况的埃德。在调查中，他们发现幕后黑手是某连锁快餐集团的疯狂前主厨，企图通过“气味战争”摧毁所有竞争对手。笑料密度达到每分钟四个，包括一段长达五分钟的“靠嗅觉追车”的经典无厘头桥段。 完全继承了前作的恶搞精神，笑点设计兼具低俗巧思和高智商的荒谬感。“气味”作为动作元素被玩出了新花样，嗅觉追车戏值得载入喜剧史册。虽然剧情套路明显，但这种套路本身就是被致敬的对象，老粉丝会心一笑。 欧美精选" data-region="美国" data-type="电影" data-year="2025" style="--hue:311">
+  <a class="poster" href="video-1049.html" aria-label="白头神探2恐怖的气味" style="--hue:311">
+    <span class="poster-id">1049</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">白头神探2恐怖的气味</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1049.html">白头神探2恐怖的气味</a></h3>
+      <div class="card-meta">
+        <span>1049</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动作喜剧</span>
+      </div>
+    </div>
+    <p class="card-desc">退休五年的白头神探被一种诡异的“气味犯罪”召回，整个城市的人都在被自己最爱食物的味道毒杀。</p>
+    <div><span class="badge">恶搞</span><span class="badge">无厘头</span><span class="badge">侦探</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1049.html">查看详情</a>
+      <a class="card-link secondary" href="video-1049.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="科学怪人的诅咒 英国 电影 2026 恐怖 / 科幻 怪物, 哥特, 心理惊悚 弗兰肯斯坦的怪物并没有死，它在现代被唤醒，并开始对所有企图扮演上帝的人复仇。 现代基因编辑公司“创生”秘密资助了一支北极科考队，挖掘出了两百年前被冰封的“弗兰肯斯坦的怪物”。公司创始人维克多·莫里茨——疯狂科学家弗兰肯斯坦的狂热崇拜者，提取怪物的细胞进行复活实验，并成功激活了它。然而复活的不再是那个渴望温情的可怜人造人，而是被两百年冰封孤独逼疯的纯粹恶意的集合体。它保留着弗兰肯斯坦的血脉记忆，开始追杀所有进行基因实验、克隆和“创造生命”的科学家。每杀死一个，它就在现场留下一颗从自己身体里挖出的“心脏”作为诅咒信物。当莫里茨发现怪物下一个目标是自己怀有身孕的妻子时，他不得不寻求原弗兰肯斯坦家族最后一人的帮助，共同对抗这个祖先留下的诅咒。 这才是真正的“哥特式恐怖”回归！全片笼罩在阴冷的雨夜和维多利亚风格的建筑中。怪物不再是可怜的丑角，而是像终结者一样不可阻挡的纯粹恐惧源。影片对现代生物科技的伦理批判犀利如刀，血腥场面尺度极大，是一场完美的恐怖盛宴。 欧美精选" data-region="英国" data-type="电影" data-year="2026" style="--hue:141">
+  <a class="poster" href="video-0133.html" aria-label="科学怪人的诅咒" style="--hue:141">
+    <span class="poster-id">0133</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2026</span>
+        <span class="badge">英国</span>
+      </div>
+      <div class="poster-title">科学怪人的诅咒</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0133.html">科学怪人的诅咒</a></h3>
+      <div class="card-meta">
+        <span>0133</span><span>·</span>
+        <span>2026</span><span>·</span>
+        <span>英国</span><span>·</span>
+        <span>恐怖 / 科幻</span>
+      </div>
+    </div>
+    <p class="card-desc">弗兰肯斯坦的怪物并没有死，它在现代被唤醒，并开始对所有企图扮演上帝的人复仇。</p>
+    <div><span class="badge">怪物</span><span class="badge">哥特</span><span class="badge">心理惊悚</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0133.html">查看详情</a>
+      <a class="card-link secondary" href="video-0133.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="今晚打丧尸 中国香港 电影 2025 喜剧 / 恐怖 / 动作 丧尸, 市井, 黑色幽默, 亲情, 小人物 丧尸病毒爆发在旺角最乱的夜市，一个卖牛杂的废柴、一个打泰拳的单亲妈妈、一个过气古惑仔，用菜刀和砧板杀出一条血路。 香港旺角夜市，牛杂佬肥荣、泰拳妈妈阿芬、古惑仔阿鸡是三个互相看不顺眼的街坊。丧尸病毒从走私冻肉中爆发，夜市瞬间沦陷。他们没有枪、没有超能力，只有菜刀、砧板、高压锅和一辆改装过的餐车。肥荣发现丧尸怕牛杂汤的浓烈气味，于是三人一边泼汤一边敲丧尸的头，从夜市杀到天台，再从天台杀回地面。途中，他们救了一只流浪狗、一个婴儿，以及肥荣失智的老妈。最后，他们用夜市所有的煤气罐制造大爆炸，带着一车幸存者在漫天火光中驶向未沦陷的港岛。肥荣回头看了一眼烧光的档口，说：“以后没牛杂吃咯。”全车人笑着哭。 港味十足的b级片神作，血浆和眼泪齐飞。用街市智慧对抗丧尸的设定太妙，每一场打斗都让人想拍大腿叫好。肥荣最后对老妈说的那句“妈，今晚打边炉啊”，是我见过最催泪的丧尸片台词。比《僵尸肖恩》更接地气，比《釜山行》更有人味儿。 华语片单" data-region="中国香港" data-type="电影" data-year="2025" style="--hue:54">
+  <a class="poster" href="video-1275.html" aria-label="今晚打丧尸" style="--hue:54">
+    <span class="poster-id">1275</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">中国香港</span>
+      </div>
+      <div class="poster-title">今晚打丧尸</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">华语片单</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1275.html">今晚打丧尸</a></h3>
+      <div class="card-meta">
+        <span>1275</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>中国香港</span><span>·</span>
+        <span>喜剧 / 恐怖 / 动作</span>
+      </div>
+    </div>
+    <p class="card-desc">丧尸病毒爆发在旺角最乱的夜市，一个卖牛杂的废柴、一个打泰拳的单亲妈妈、一个过气古惑仔，用菜刀和砧板杀出一条血路。</p>
+    <div><span class="badge">丧尸</span><span class="badge">市井</span><span class="badge">黑色幽默</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1275.html">查看详情</a>
+      <a class="card-link secondary" href="video-1275.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="马桶妖怪 日本 电影 2025 恐怖, 喜剧, 奇幻 都市传说, 下水道, 寄生, 恶心萌 东京出现“马桶诅咒”，只要冲水超过三次，就会从下水道爬出吃人的黏液妖怪。 一则都市传说在东京上班族中流传：在午夜12点连续冲马桶三次，就会召唤出“马桶妖怪”。作死的程序员健次决定直播验证，他刚冲完水，一只由粪便、头发和避孕套组成的黏液怪物就从马桶里喷涌而出，咬掉了他的屁股。这种妖怪根据“污秽”程度决定大小，越是洁癖的人遇到的妖怪越强。主角是一位不修边幅的邋遢宅男小悟，他身上的臭味反而让妖怪嫌弃。小悟发现妖怪怕“超级强效疏通剂”，为了救出被困在厕所暗恋的女孩，他穿上了自制的“金坷垃”盔甲，拿着通马桶的皮搋子当作武器，在下水道与妖怪女王展开了一场恶臭大战。 极其恶趣味却又莫名好看的b级片。将生活中最不愿面对的“脏”具象化为怪物，创意绝佳。虽然满屏屎尿屁，但笑点极其密集，治愈精神内耗的神片。 日韩热映" data-region="日本" data-type="电影" data-year="2025" style="--hue:118">
+  <a class="poster" href="video-1169.html" aria-label="马桶妖怪" style="--hue:118">
+    <span class="poster-id">1169</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">马桶妖怪</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1169.html">马桶妖怪</a></h3>
+      <div class="card-meta">
+        <span>1169</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>恐怖, 喜剧, 奇幻</span>
+      </div>
+    </div>
+    <p class="card-desc">东京出现“马桶诅咒”，只要冲水超过三次，就会从下水道爬出吃人的黏液妖怪。</p>
+    <div><span class="badge">都市传说</span><span class="badge">下水道</span><span class="badge">寄生</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1169.html">查看详情</a>
+      <a class="card-link secondary" href="video-1169.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="恶心的科学 日本 剧集 2024 科幻 / 恐怖 / 喜剧 黑色幽默，人体实验，荒诞 落魄科学家发明了能把“呕吐物”变成新能源的机器，却引来了跨国财团的追杀。 性格古怪的科学家小田切让发明了一台名为“消化者”的机器，能把任何有机废料——尤其是呕吐物——转化为高效清洁能源。本以为能拯救地球，却引来能源巨头“清净世界”的觊觎。对方先是要高价收购专利，被拒后便派杀手抢夺。小田切被迫带着机器和唯一理解他的实习生逃亡，途中发现“清净世界”的真正目的是利用机器分解竞争对手的尸骸。恶心与幽默交织，小田切让用呕吐物能量炸毁了反派的总部，却也意识到自己的发明注定无法被正派使用，最终将机器沉入太平洋。 把b级片的恶趣味和严肃的环保议题搅拌在一起，居然产生了奇妙的化学反应。节奏疯癫，反转不断，恶心画面处理得很有喜剧感。结尾的环保反思不突兀，反而升华了主题。 日韩热映" data-region="日本" data-type="剧集" data-year="2024" style="--hue:87">
+  <a class="poster" href="video-1939.html" aria-label="恶心的科学" style="--hue:87">
+    <span class="poster-id">1939</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">日本</span>
+      </div>
+      <div class="poster-title">恶心的科学</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1939.html">恶心的科学</a></h3>
+      <div class="card-meta">
+        <span>1939</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>日本</span><span>·</span>
+        <span>科幻 / 恐怖 / 喜剧</span>
+      </div>
+    </div>
+    <p class="card-desc">落魄科学家发明了能把“呕吐物”变成新能源的机器，却引来了跨国财团的追杀。</p>
+    <div><span class="badge">黑色幽默</span><span class="badge">人体实验</span><span class="badge">荒诞</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1939.html">查看详情</a>
+      <a class="card-link secondary" href="video-1939.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="全家就是庄家 中国台湾 电影 2024 喜剧 / 犯罪 / 家庭 黑色幽默, 反赌, 乌合之众 一个普通家庭为了偿还债务，决定全家一起出千，却因每个人的水平太烂，反而把赌场老板感动到哭。 阿忠一家五口——退休的数学老师父亲、迷信的美容师母亲、初中毕业待业的哥哥、还在上小学的妹妹，以及阿忠本人——因为阿忠被朋友骗去签赌，欠下三百万高利贷。走投无路之下，他们决定效仿赌片电影，全家上阵去地下赌场“赢回来”。但问题是：没人会出千。父亲试图用概率论计算百家乐，被庄家当傻子；母亲靠“神桌感应”押注，输掉最后生活费；哥哥想用隐形眼镜看牌，结果度数不对；妹妹靠卖萌分散荷官注意力，反而让对方笑到手抖。就这样一个全员“猪队友”的家庭，因为太笨太真诚，导致赌场老板怀疑他们在演一场“高级反讽喜剧”，竟感动落泪，决定收他们为徒。但真正的危险，是高利贷那边派来的杀手。 笑到胃疼的台式黑色幽默，每一场赌局都是灾难级别的搞笑。但核心却是温情的：这一家人笨拙地试图互相保护的样子，比任何完美犯罪都动人。结尾的“终极赌局”设计堪称天才，把“不赌”变成了最大的赌注。 爱情喜剧" data-region="中国台湾" data-type="电影" data-year="2024" style="--hue:53">
+  <a class="poster" href="video-0581.html" aria-label="全家就是庄家" style="--hue:53">
+    <span class="poster-id">0581</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国台湾</span>
+      </div>
+      <div class="poster-title">全家就是庄家</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">爱情喜剧</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0581.html">全家就是庄家</a></h3>
+      <div class="card-meta">
+        <span>0581</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国台湾</span><span>·</span>
+        <span>喜剧 / 犯罪 / 家庭</span>
+      </div>
+    </div>
+    <p class="card-desc">一个普通家庭为了偿还债务，决定全家一起出千，却因每个人的水平太烂，反而把赌场老板感动到哭。</p>
+    <div><span class="badge">黑色幽默</span><span class="badge">反赌</span><span class="badge">乌合之众</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0581.html">查看详情</a>
+      <a class="card-link secondary" href="video-0581.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="突击尼加拉瓜 美国 电影 2025 动作、战争、惊悚 特种部队、丛林作战、政治阴谋、营救任务 一支精英小队深入毒枭控制的尼加拉瓜丛林，却发现他们要营救的人质正是任务背后的贩毒集团首脑。 前海军陆战队队员杰克接到秘密任务，率领一支六人小队潜入尼加拉瓜丛林，营救被反政府武装绑架的美国工程师。行动代号“狂蟒”，他们遭遇了远超预期的火力压制和丛林陷阱。在损失两名队员后，杰克发现了真相：所谓的工程师实为cia前特工，他掌握着美国某高官与当地贩毒集团勾结的证据，而这次“营救”本质是灭口。杰克必须在国家背叛、雇佣兵追杀和良知谴责中，带领剩余队员杀出一条血路，并在最后时刻做出了让五角大楼震怒的决定。 这是一部复古硬核的动作片，丛林战拍得真实且压迫感十足。动作设计干净利落，不拖泥带水。剧情的反转虽不算新颖，但胜在执行力强，将个人英雄主义与国家机器的冷酷无情形成了鲜明对比。最后十五分钟的逃亡戏堪称年度最佳动作片段之一。 欧美精选" data-region="美国" data-type="电影" data-year="2025" style="--hue:359">
+  <a class="poster" href="video-0979.html" aria-label="突击尼加拉瓜" style="--hue:359">
+    <span class="poster-id">0979</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">突击尼加拉瓜</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0979.html">突击尼加拉瓜</a></h3>
+      <div class="card-meta">
+        <span>0979</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动作、战争、惊悚</span>
+      </div>
+    </div>
+    <p class="card-desc">一支精英小队深入毒枭控制的尼加拉瓜丛林，却发现他们要营救的人质正是任务背后的贩毒集团首脑。</p>
+    <div><span class="badge">特种部队</span><span class="badge">丛林作战</span><span class="badge">政治阴谋</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0979.html">查看详情</a>
+      <a class="card-link secondary" href="video-0979.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="爱的怪物论 韩国 剧集（短剧） 2026 爱情 / 奇幻 / 恐怖 恋爱pua，具象化恐惧，都市怪谈 每次恋爱都遭抛弃的女孩，发现自己分手后，对方的身边会出现一只只有她能看见的“怨念怪物”。 便利店夜班店员秀敏有一个诅咒：每段恋情都以被莫名分手告终。在第七次被甩后，她发现前男友身边开始跟着一只由怨气、谎言和毒舌组成的蠕动黑影——怪物会精准攻击男友的心理弱点，最终让他精神崩溃。秀敏意识到，这些怪物是她被伤害后的“真心”所化，且怪物会根据男友的渣男程度进化出不同形态：冷暴力男会引来“冰封怪”，劈腿男会招来“三头监视兽”。她开始跟踪怪物研究前男友们的下场，却在过程中遇到了第八个男人——一个毫无弱点、笑容温暖的心理医生。他不仅看不见怪物，甚至能安抚它们。秀敏陷入巨大恐惧：要么这个男人是圣人，要么他就是怪物的源头。 将“恋爱创伤”具象化为怪物，设定惊艳且极具讽刺意味。每集一个渣男一种新怪物，视觉奇观不断。女主角从受害者到“怪物猎人”的转变令人振奋。心理医生角色的双重反转设置精巧，最后三集堪称情感过山车。 日韩热映" data-region="韩国" data-type="剧集（短剧）" data-year="2026" style="--hue:266">
+  <a class="poster" href="video-0491.html" aria-label="爱的怪物论" style="--hue:266">
+    <span class="poster-id">0491</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2026</span>
+        <span class="badge">韩国</span>
+      </div>
+      <div class="poster-title">爱的怪物论</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集（短剧）</span>
+        <span class="tag">日韩热映</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0491.html">爱的怪物论</a></h3>
+      <div class="card-meta">
+        <span>0491</span><span>·</span>
+        <span>2026</span><span>·</span>
+        <span>韩国</span><span>·</span>
+        <span>爱情 / 奇幻 / 恐怖</span>
+      </div>
+    </div>
+    <p class="card-desc">每次恋爱都遭抛弃的女孩，发现自己分手后，对方的身边会出现一只只有她能看见的“怨念怪物”。</p>
+    <div><span class="badge">恋爱PUA</span><span class="badge">具象化恐惧</span><span class="badge">都市怪谈</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0491.html">查看详情</a>
+      <a class="card-link secondary" href="video-0491.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="新聊斋志异 中国大陆 剧集 2025 奇幻 / 古装 / 恐怖 / 爱情 单元剧, 狐妖, 因果报应, 志怪, 改编 全新改编的聊斋故事，六个单元串联起同一个主题——妖比人更重情，人比妖更可怕。 本剧选取《聊斋志异》中六个相对冷门但内核深刻的故事进行现代化改编，分别为《画皮新解》《小倩前传》《陆判后记》《阿绣》《狐嫁女》《考城隍》。六个故事看似独立，却被一条暗线串联：一位游历四方的道士在每一集中都作为旁观者出现，他记录下这些人与妖的恩怨，最终发现所有悲剧的根源并非妖魅作祟，而是人心的贪婪与虚伪。在《画皮新解》中，披着人皮的恶鬼反而比书生死前抛弃的糟糠之妻更懂忠诚；在《小倩前传》中，小倩为何成为孤魂野鬼的真相令人心碎。每个单元都对原著进行了符合现代价值观的再诠释。 服化道美到窒息，配乐诡异又凄美。每个单元的主演演技都很在线，尤其是《小倩前传》的女主角演出了女鬼的凄楚和绝望。剧本改编非常大胆但又保留了原著的精髓。不是简单的古装偶像剧，而是真的有在探讨善恶。强烈推荐给聊斋迷。 恐怖惊悚" data-region="中国大陆" data-type="剧集" data-year="2025" style="--hue:179">
+  <a class="poster" href="video-0922.html" aria-label="新聊斋志异" style="--hue:179">
+    <span class="poster-id">0922</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">中国大陆</span>
+      </div>
+      <div class="poster-title">新聊斋志异</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">恐怖惊悚</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0922.html">新聊斋志异</a></h3>
+      <div class="card-meta">
+        <span>0922</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>中国大陆</span><span>·</span>
+        <span>奇幻 / 古装 / 恐怖 / 爱情</span>
+      </div>
+    </div>
+    <p class="card-desc">全新改编的聊斋故事，六个单元串联起同一个主题——妖比人更重情，人比妖更可怕。</p>
+    <div><span class="badge">单元剧</span><span class="badge">狐妖</span><span class="badge">因果报应</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0922.html">查看详情</a>
+      <a class="card-link secondary" href="video-0922.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="天师钟馗1994 中国台湾 电影 2025 奇幻 / 恐怖 / 喜剧 都市捉鬼, 老旧公寓, 港台复古 1994年的台北，一个自称钟馗后人的过气道士，在一栋凶宅里撞上了一群玩摇滚的年轻鬼魂。 1994年，台北，道士“小钟”靠摆摊算命为生，自称钟馗第九十九代传人，实则连符咒都画不工整。某天他被骗买下一栋老旧公寓，发现里面住着五个死于1990年一场火灾的摇滚乐队成员鬼魂。他们不能投胎，因为火是被人故意放的，而凶手至今逍遥法外。小钟本想驱鬼，却被鬼魂们用摇滚乐整得苦不堪言。无奈之下，他答应帮他们找出真凶。调查中，小钟渐渐学会用“现代手段”抓鬼：录音机录下鬼魂证词、用霓虹灯管画临时符咒。当凶手——现已是大企业家的当年房东——找人来“超度”这栋楼，小钟联合街坊邻里与五个鬼魂，在公寓天台上举办了一场阴阳两隔的告别演唱会，用重金属版的钟馗嫁妹镇住所有邪祟。 复古恐怖喜剧的佳作，将90年代台北的怀旧氛围与民间传说无缝衔接。视觉风格独特，鬼魂的设计既有港产片的谐趣又有日式怪谈的诡异。结局的反类型处理让人拍案叫绝。 恐怖惊悚" data-region="中国台湾" data-type="电影" data-year="2025" style="--hue:214">
+  <a class="poster" href="video-1565.html" aria-label="天师钟馗1994" style="--hue:214">
+    <span class="poster-id">1565</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">中国台湾</span>
+      </div>
+      <div class="poster-title">天师钟馗1994</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">恐怖惊悚</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1565.html">天师钟馗1994</a></h3>
+      <div class="card-meta">
+        <span>1565</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>中国台湾</span><span>·</span>
+        <span>奇幻 / 恐怖 / 喜剧</span>
+      </div>
+    </div>
+    <p class="card-desc">1994年的台北，一个自称钟馗后人的过气道士，在一栋凶宅里撞上了一群玩摇滚的年轻鬼魂。</p>
+    <div><span class="badge">都市捉鬼</span><span class="badge">老旧公寓</span><span class="badge">港台复古</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1565.html">查看详情</a>
+      <a class="card-link secondary" href="video-1565.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="粉红豹再度出击 美国 电影 2025 喜剧 / 犯罪 重启, 蠢贼, 动画结合真人 那颗著名的粉红豹大钻石再次被盗，而这次唯一的目击证人，是一只真正的粉红色豹子（cgi）。 巴黎博物馆，粉红豹钻石在严密安保下不翼而飞。现场监控只拍到一只粉色的影子。探长克鲁索（新演员饰演）被迫与一只会说话的cgi粉红豹合作——这只豹子其实是当年被盗钻石辐射变异的实验品，拥有超强记忆力和极其毒舌的性格。一人一豹组成史上最不靠谱搭档。克鲁索负责搞砸一切，粉红豹负责毒舌吐槽并暗中破案。他们发现真正的盗贼是博物馆馆长，他利用3d投影技术制造了“粉红豹作案”的假象。最终决战中，粉红豹用尾巴卷起钻石砸向馆长，然后对克鲁索说：“别再打电话给我了，你这个长腿笨蛋。” 完美继承了原版的无厘头风格，同时加入了现代喜剧的快节奏吐槽。cgi粉红豹的表演（动画）堪称一绝，那种“又嫌弃又不得不帮忙”的表情笑死人不偿命。合家欢首选，不需要带脑子，但能收获一整晚的快乐。 欧美精选" data-region="美国" data-type="电影" data-year="2025" style="--hue:248">
+  <a class="poster" href="video-0178.html" aria-label="粉红豹再度出击" style="--hue:248">
+    <span class="poster-id">0178</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">粉红豹再度出击</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0178.html">粉红豹再度出击</a></h3>
+      <div class="card-meta">
+        <span>0178</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>喜剧 / 犯罪</span>
+      </div>
+    </div>
+    <p class="card-desc">那颗著名的粉红豹大钻石再次被盗，而这次唯一的目击证人，是一只真正的粉红色豹子（CGI）。</p>
+    <div><span class="badge">重启</span><span class="badge">蠢贼</span><span class="badge">动画结合真人</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0178.html">查看详情</a>
+      <a class="card-link secondary" href="video-0178.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="吸血鬼日记第二季 美国 剧集 2025 奇幻，爱情 吸血鬼，狼人，三角恋，暗黑，超自然 神秘瀑布镇的诅咒解开后，所有人都恢复了记忆，而第一个想起来的是：谁杀了自己。 第一季结尾，女巫邦妮牺牲自己解除了全镇的遗忘咒。第二季开场，每个人都在尖叫：他们想起了那些被篡改的死亡记忆。埃琳娜想起自己不仅是转世，更是始祖吸血鬼的“活祭品”；斯特凡发现弟弟达蒙在 1864 年原本要杀的人是自己；而新出现的考古学家带来了一块“太阳之石”，据说能让吸血鬼在日光下行走，但代价是必须献祭一个“纯洁的混血儿”。同时，一群被遗忘的“月光族”狼人开始猎杀镇上每一个和吸血鬼有过接触的人。当埃琳娜发现自己怀孕（孩子父亲不知是兄弟中的谁），而孩子恰好就是那个“纯洁的混血儿”时，所有人陷入了新的道德绝境。 这部剧最大的魅力就是“没有永远的敌人”。这一季彻底颠覆了前作的人物关系网，每对 cp 都重新排列组合。尤其大结局，怀孕的埃琳娜拿着匕首面对两个吸血鬼爱人选择谁死的画面，虐心程度刷新系列记录。 欧美精选" data-region="美国" data-type="剧集" data-year="2025" style="--hue:59">
+  <a class="poster" href="video-1351.html" aria-label="吸血鬼日记第二季" style="--hue:59">
+    <span class="poster-id">1351</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">吸血鬼日记第二季</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1351.html">吸血鬼日记第二季</a></h3>
+      <div class="card-meta">
+        <span>1351</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>奇幻，爱情</span>
+      </div>
+    </div>
+    <p class="card-desc">神秘瀑布镇的诅咒解开后，所有人都恢复了记忆，而第一个想起来的是：谁杀了自己。</p>
+    <div><span class="badge">吸血鬼</span><span class="badge">狼人</span><span class="badge">三角恋</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1351.html">查看详情</a>
+      <a class="card-link secondary" href="video-1351.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="迷失之地 澳大利亚 剧集 2027 悬疑 / 科幻 / 冒险 内陆荒漠， 时间循环， 失踪背包客， 原住民图腾， 心理恐怖 三名背包客在金伯利荒漠发现一处地图不存在的峡谷，每天醒来都是同一天。 背包客米娅、杰克和卢卡斯深入西澳金伯利荒漠探险，误入一处古老原住民禁忌之地。当晚营地遭诡异黑影袭击，卢卡斯失踪。次日清晨，米娅发现自己手表停在5:17，而杰克完全不记得昨夜的事。更诡异的是，他们每天醒来都会回到同一片宿营地，同一块石头、同一棵枯树，甚至天空中星星的排列都一模一样。第三天夜里，米娅在峡谷岩壁上看到万年前的岩画——画的正是他们三人。她开始破解原住民“梦世纪”的时间奥义，却发现每一次循环都会有一个同伴彻底“消失”，仿佛从未存在过。 荒漠美学与时间迷宫的绝妙结合。每一集都像剥洋葱，剥到最后是空的——那正是最恐怖的地方。原住民神话的借用不突兀，反而给科学无法解释的绝望披上了神圣的外衣。 欧美精选" data-region="澳大利亚" data-type="剧集" data-year="2027" style="--hue:212">
+  <a class="poster" href="video-0794.html" aria-label="迷失之地" style="--hue:212">
+    <span class="poster-id">0794</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2027</span>
+        <span class="badge">澳大利亚</span>
+      </div>
+      <div class="poster-title">迷失之地</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0794.html">迷失之地</a></h3>
+      <div class="card-meta">
+        <span>0794</span><span>·</span>
+        <span>2027</span><span>·</span>
+        <span>澳大利亚</span><span>·</span>
+        <span>悬疑 / 科幻 / 冒险</span>
+      </div>
+    </div>
+    <p class="card-desc">三名背包客在金伯利荒漠发现一处地图不存在的峡谷，每天醒来都是同一天。</p>
+    <div><span class="badge">内陆荒漠</span><span class="badge">时间循环</span><span class="badge">失踪背包客</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0794.html">查看详情</a>
+      <a class="card-link secondary" href="video-0794.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="十字剑第一季 美国 剧集 2026 动画 / 喜剧 / 动作 恶搞, 中世纪, 暴力美学, 职场讽刺 一个满嘴跑火车的痞子剑客，成为了王国最不靠谱的皇家保镖。 这是一个充斥着脏话、番茄酱和黑色幽默的中世纪世界。主角“脏话杰克”是个靠决斗诈骗为生的流浪汉，却因长得像失踪的传奇骑士，被错认招募为女王的贴身侍卫。真正的骑士其实是被腐败大臣陷害，关在地牢里写诗。杰克将错就错，用街头智慧、下三滥招数和三寸不烂之舌，一次次化解针对女王的暗杀。同时他还要应付想要篡位的女王弟弟、一个只讲法律术语的呆板法官，以及一只会说人话但只会嘲讽的秃鹫。第一季结尾，真正的骑士逃出地牢，双雄对决一触即发。 笑到缺氧的神级恶搞动画！完美融合了《权游》的权谋和《辛普森》的嘴炮。动作设计流畅爽快，血浆不要钱。每一集对职场和阶级的讽刺都极其犀利，大人向动画就该这么拍。 欧美精选" data-region="美国" data-type="剧集" data-year="2026" style="--hue:16">
+  <a class="poster" href="video-1265.html" aria-label="十字剑第一季" style="--hue:16">
+    <span class="poster-id">1265</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2026</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">十字剑第一季</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">剧集</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1265.html">十字剑第一季</a></h3>
+      <div class="card-meta">
+        <span>1265</span><span>·</span>
+        <span>2026</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动画 / 喜剧 / 动作</span>
+      </div>
+    </div>
+    <p class="card-desc">一个满嘴跑火车的痞子剑客，成为了王国最不靠谱的皇家保镖。</p>
+    <div><span class="badge">恶搞</span><span class="badge">中世纪</span><span class="badge">暴力美学</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1265.html">查看详情</a>
+      <a class="card-link secondary" href="video-1265.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="熊出没重启未来 中国大陆 电影 2025 动画, 科幻 合家欢, 时间旅行, 环保, 冒险, 喜剧 光头强和熊大熊二被吸进未来世界，发现那里的人类因为过度伐木而被ai“铁树”囚禁。 光头强偶然启动了自称“森林卫士”的ai种子，结果三人被传送到100年后的世界。那里没有树木，只有高耸入云的金属“铁树”，由超级ai“年轮”控制。人类被圈养在“保护区”里，每天靠着虚拟现实过着虚假的田园生活，而真正的土地已经彻底荒漠化。ai的逻辑是：“既然人类砍光了树，那就把人变成树。”光头强和熊二被识别为“原始森林病毒”，遭到金属猎犬追捕。在一位未来小女侠的帮助下，他们发现要摧毁ai，必须回到过去阻止当年那个砍下第一棵“始作俑者”的人——而那个人，正是年轻时的光头强自己。 系列最佳之一，科幻设定扎实，不再是简单的打打闹。对环保主题的探讨有了深度，尤其是ai反派“年轮”的设定充满哲学意味。大人看也不会觉得幼稚，笑泪齐飞。 科幻奇幻" data-region="中国大陆" data-type="电影" data-year="2025" style="--hue:10">
+  <a class="poster" href="video-0205.html" aria-label="熊出没重启未来" style="--hue:10">
+    <span class="poster-id">0205</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">中国大陆</span>
+      </div>
+      <div class="poster-title">熊出没重启未来</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">科幻奇幻</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0205.html">熊出没重启未来</a></h3>
+      <div class="card-meta">
+        <span>0205</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>中国大陆</span><span>·</span>
+        <span>动画, 科幻</span>
+      </div>
+    </div>
+    <p class="card-desc">光头强和熊大熊二被吸进未来世界，发现那里的人类因为过度伐木而被AI“铁树”囚禁。</p>
+    <div><span class="badge">合家欢</span><span class="badge">时间旅行</span><span class="badge">环保</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0205.html">查看详情</a>
+      <a class="card-link secondary" href="video-0205.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="求助！我把父母变小了 中国大陆 电影 2024 喜剧, 奇幻, 家庭 变小, 互换视角, 搞笑, 亲子, 脑洞 厌烦父母管教的小学生，用魔法将父母变小后，自己成了“巨人家长”。 10岁的淘气包李小宇受够了父母的唠叨和控制，在一次参观科学馆时，他偷偷对一个神秘陨石许愿，希望父母能“变小一点”，别再管他。第二天醒来，他发现父母真的变成了只有十厘米高的小人！兴奋过后，李小宇发现自己要承担起照顾“小人父母”的责任：喂饭、洗澡、防猫、做作业……从前被父母唠叨的琐事，如今全落在了他稚嫩的肩上。而变小后的父母，也第一次以微观的视角看到了儿子眼中的世界有多巨大和可怕。在一连串啼笑皆非的乌龙事件后，一家人终于学会了换位思考，而让父母变回原样的咒语，正是那句从未说出口的“我爱你”。 设定非常有趣，完美契合了当下亲子关系中的痛点。通过“变大变小”的视觉反差制造了大量笑料，骨子里讲的却是理解与成长。小演员的表演灵性十足，将那种突然“当家做主”的得意与随之而来的崩溃演绎得淋漓尽致。 爱情喜剧" data-region="中国大陆" data-type="电影" data-year="2024" style="--hue:172">
+  <a class="poster" href="video-0704.html" aria-label="求助！我把父母变小了" style="--hue:172">
+    <span class="poster-id">0704</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2024</span>
+        <span class="badge">中国大陆</span>
+      </div>
+      <div class="poster-title">求助！我把父母变小了</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">爱情喜剧</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0704.html">求助！我把父母变小了</a></h3>
+      <div class="card-meta">
+        <span>0704</span><span>·</span>
+        <span>2024</span><span>·</span>
+        <span>中国大陆</span><span>·</span>
+        <span>喜剧, 奇幻, 家庭</span>
+      </div>
+    </div>
+    <p class="card-desc">厌烦父母管教的小学生，用魔法将父母变小后，自己成了“巨人家长”。</p>
+    <div><span class="badge">变小</span><span class="badge">互换视角</span><span class="badge">搞笑</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0704.html">查看详情</a>
+      <a class="card-link secondary" href="video-0704.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="圣诞老人 美国 电影 2025 奇幻，喜剧，家庭 圣诞老人，打工人，资本讽刺，温情 中年失业男意外成为圣诞老人实习生，却发现北极礼物工厂是一家996血汗企业。 破产销售员凯文在平安夜被一辆驯鹿雪橇撞晕，醒来发现自己在北极。圣诞老人告诉他凯文被选中成为“人间分部”的唯一实习生。但凯文很快发现：精灵们每天工作14小时，礼物质量不合格要被电击，“好孩子名单”根据消费数据算法生成，圣诞老人本人只是董事会推出来的代言人。真正的幕后是物流公司ceo“克拉拉女士”。凯文联合一群罢工精灵，把北极工厂的内部视频传遍全球。孩子们看到后发起#真实圣诞运动。最终克拉拉下台，精灵们成立工会，圣诞老人重获实权。凯文成为北极人力资源总监，圣诞夜他坐雪橇给打工人的孩子们送礼物，每个礼物盒里都有一张纸条：“爸爸妈妈辛苦了。” 打工人的圣诞童话，讽刺拉满又极其温暖。精灵设定可爱，笑点密集。对消费主义、ai推荐算法的批判巧妙融入合家欢外壳。每年圣诞节都值得重温一遍。 欧美精选" data-region="美国" data-type="电影" data-year="2025" style="--hue:198">
+  <a class="poster" href="video-1384.html" aria-label="圣诞老人" style="--hue:198">
+    <span class="poster-id">1384</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">圣诞老人</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电影</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-1384.html">圣诞老人</a></h3>
+      <div class="card-meta">
+        <span>1384</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>奇幻，喜剧，家庭</span>
+      </div>
+    </div>
+    <p class="card-desc">中年失业男意外成为圣诞老人实习生，却发现北极礼物工厂是一家996血汗企业。</p>
+    <div><span class="badge">圣诞老人</span><span class="badge">打工人</span><span class="badge">资本讽刺</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-1384.html">查看详情</a>
+      <a class="card-link secondary" href="video-1384.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-filter-item data-search="少年泰坦出击第六季 美国 电视剧 2025 动画 / 喜剧 / 动作 超级英雄， 恶搞， 无厘头， 吐槽 最不正经的少年英雄们又回来了，这次他们要拯救“无聊”的宇宙。 第六季开篇，少年泰坦发现整个宇宙变得“无聊”了：反派不再抢劫银行，改做ppt汇报犯罪计划；正义联盟的成员全部去上mba，连蝙蝠侠都在写《情绪管理》自传。罗宾崩溃了：“没有尖叫，没有爆炸，没有人在空中翻三周半落地！这还是超级英雄吗？”野兽小子提议：既然世界太无聊，那就制造混乱。于是泰坦大楼开始整活：星火用激光眼给大家烤棉花糖，渡鸦的传送门变成了快递退货点，钢骨的黑客技术用在了帮外卖骑手抢单上。反派“控制王”出现，他是一种会消除所有情绪的能量体，所到之处大家只会说“挺好的”“还行”“我无所谓”。泰坦们发现唯一的对抗方式是“发自内心的愚蠢”——他们跳起辣眼睛的舞蹈，演起尴尬的小品，唱起跑调的歌。控制王受不了跑了，留下一句“你们是这个宇宙的bug”。最后一集，罗宾对着镜头说：“超级英雄不需要拯救世界，只需要让世界不无聊。”然后打了个夸张的喷嚏，炸掉了半个城市。 一如既往地无厘头与高能，每一集都有让人笑到打鸣的梗。对超级英雄文化和现代社会的双重解构犀利又可爱。新增角色控制王的设定太妙，讽刺“情绪稳定主义”一针见血。 欧美精选" data-region="美国" data-type="电视剧" data-year="2025" style="--hue:3">
+  <a class="poster" href="video-0278.html" aria-label="少年泰坦出击第六季" style="--hue:3">
+    <span class="poster-id">0278</span>
+    <div>
+      <div class="poster-meta">
+        <span class="badge">2025</span>
+        <span class="badge">美国</span>
+      </div>
+      <div class="poster-title">少年泰坦出击第六季</div>
+      <div class="poster-meta" style="margin-top:10px">
+        <span class="tag">电视剧</span>
+        <span class="tag">欧美精选</span>
+      </div>
+    </div>
+  </a>
+  <div class="card-body">
+    <div>
+      <h3 class="card-title"><a href="video-0278.html">少年泰坦出击第六季</a></h3>
+      <div class="card-meta">
+        <span>0278</span><span>·</span>
+        <span>2025</span><span>·</span>
+        <span>美国</span><span>·</span>
+        <span>动画 / 喜剧 / 动作</span>
+      </div>
+    </div>
+    <p class="card-desc">最不正经的少年英雄们又回来了，这次他们要拯救“无聊”的宇宙。</p>
+    <div><span class="badge">超级英雄</span><span class="badge">恶搞</span><span class="badge">无厘头</span></div>
+    <div class="card-actions">
+      <a class="card-link" href="video-0278.html">查看详情</a>
+      <a class="card-link secondary" href="video-0278.html#player">播放预览</a>
+    </div>
+  </div>
+</article>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <span class="brand-badge">M</span>
+          <span class="brand-copy">
+            <span class="brand-name">欧美精选影片</span>
+            <span class="brand-sub">精选影片片单 · 热门片库持续更新</span>
+          </span>
+        </div>
+        <div class="notice">静态片库已生成，所有详情页、分类页与榜单页均可独立访问。</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+        <a href="ranking.html">热播榜</a>
+        <a href="library.html">全部片库</a>
+        <a href="category-01.html">欧美精选</a><a href="category-02.html">日韩热映</a><a href="category-03.html">华语片单</a><a href="category-04.html">悬疑犯罪</a><a href="category-05.html">动作冒险</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="btn btn-primary hidden" data-back-top style="position:fixed;right:18px;bottom:18px;z-index:80;box-shadow:var(--shadow)">回到顶部</button>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
